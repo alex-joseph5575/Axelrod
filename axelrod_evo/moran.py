@@ -5,11 +5,11 @@ from typing import Callable, List, Optional, Set, Tuple
 
 import matplotlib.pyplot as plt
 import numpy as np
-from axelrod import DEFAULT_TURNS, EvolvablePlayer, Game, Player
-from axelrod.deterministic_cache import DeterministicCache
-from axelrod.graph import Graph, complete_graph
-from axelrod.match import Match
-from axelrod.random_ import BulkRandomGenerator, RandomGenerator
+from axelrod_evo import DEFAULT_TURNS, EvolvablePlayer, Game, Player
+from axelrod_evo.deterministic_cache import DeterministicCache
+from axelrod_evo.graph import Graph, complete_graph
+from axelrod_evo.match import Match
+from axelrod_evo.random_ import BulkRandomGenerator, RandomGenerator
 
 
 class MoranProcess(object):
@@ -66,7 +66,7 @@ class MoranProcess(object):
         noise:
             The background noise, if any. Randomly flips plays with probability
             `noise`.
-        game: axelrod.Game
+        game: axelrod_evo.Game
             The game object used to score matches.
         deterministic_cache:
             A optional prebuilt deterministic cache
@@ -75,9 +75,9 @@ class MoranProcess(object):
             probability `mutation_rate`
         mode:
             Birth-Death (bd) or Death-Birth (db)
-        interaction_graph: Axelrod.graph.Graph
+        interaction_graph: axelrod_evo.graph.Graph
             The graph in which the replicators are arranged
-        reproduction_graph: Axelrod.graph.Graph
+        reproduction_graph: axelrod_evo.graph.Graph
             The reproduction graph, set equal to the interaction graph if not
             given
         fitness_transformation:

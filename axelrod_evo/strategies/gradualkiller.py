@@ -1,6 +1,6 @@
-from axelrod.action import Action
-from axelrod.player import Player
-from axelrod.strategy_transformers import InitialTransformer
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
+from axelrod_evo.strategy_transformers import InitialTransformer
 
 C, D = Action.C, Action.D
 

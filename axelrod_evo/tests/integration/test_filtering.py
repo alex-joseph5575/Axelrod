@@ -1,8 +1,8 @@
 import unittest
 import warnings
 
-import axelrod as axl
-from axelrod.tests.property import strategy_lists
+import axelrod_evo as axl
+from axelrod_evo.tests.property import strategy_lists
 from hypothesis import example, given, settings
 from hypothesis.strategies import integers, lists, sampled_from
 

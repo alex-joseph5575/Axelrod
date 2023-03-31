@@ -1,8 +1,8 @@
 from collections import OrderedDict
 from typing import Dict, Union
 
-from axelrod.action import Action, actions_to_str
-from axelrod.player import Player
+from axelrod_evo.action import Action, actions_to_str
+from axelrod_evo.player import Player
 
 Score = Union[int, float]
 

@@ -1,7 +1,7 @@
 from os import linesep
 
-from axelrod.action import Action
-from axelrod.player import Player
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
 from prompt_toolkit import prompt
 from prompt_toolkit.validation import ValidationError, Validator
 

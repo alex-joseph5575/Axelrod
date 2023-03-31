@@ -1,5 +1,5 @@
-from axelrod.action import Action
-from axelrod.player import Player
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 
@@ -7,11 +7,11 @@ C, D = Action.C, Action.D
 class Random(Player):
     """A player who randomly chooses between cooperating and defecting.
 
-    This strategy came 15th in Axelrod's original tournament.
+    This strategy came 15th in axelrod_evo's original tournament.
 
     Names:
 
-    - Random: [Axelrod1980]_
+    - Random: [axelrod_evo1980]_
     - Lunatic: [Tzafestas2000]_
     """
 

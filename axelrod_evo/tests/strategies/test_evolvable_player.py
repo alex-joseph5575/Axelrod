@@ -1,9 +1,9 @@
 import functools
 import unittest
 
-import axelrod as axl
-from axelrod.action import Action
-from axelrod.evolvable_player import (
+import axelrod_evo as axl
+from axelrod_evo.action import Action
+from axelrod_evo.evolvable_player import (
     copy_lists,
     crossover_dictionaries,
     crossover_lists,

@@ -5,24 +5,24 @@ import pkg_resources
 
 
 def axl_filename(path: pathlib.Path) -> pathlib.Path:
-    """Given a path under Axelrod/, return absolute filepath.
+    """Given a path under axelrod_evo/, return absolute filepath.
 
     Parameters
     ----------
     axl_path
-        A pathlib.Path object with the relative directory under Axelrod/
+        A pathlib.Path object with the relative directory under axelrod_evo/
 
     Returns
     -------
         A pathlib.Path object with the absolute directory.
     """
-    # We go up a dir because this code is located in Axelrod/axelrod.
+    # We go up a dir because this code is located in axelrod_evo/axelrod_evo.
     axl_path = pathlib.Path(__file__).resolve().parent.parent
     return axl_path / path
 
 
 def load_file(filename: str, directory: str) -> List[List[str]]:
-    """Loads a data file stored in the Axelrod library's data subdirectory,
+    """Loads a data file stored in the axelrod_evo library's data subdirectory,
     likely for parameters for a strategy."""
     path = "/".join((directory, filename))
     data_bytes = pkg_resources.resource_string(__name__, path)

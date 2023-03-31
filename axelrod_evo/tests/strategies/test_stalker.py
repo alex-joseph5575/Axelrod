@@ -1,6 +1,6 @@
 """Tests for the Stalker strategy."""
 
-import axelrod as axl
+import axelrod_evo as axl
 
 from .test_player import TestPlayer
 

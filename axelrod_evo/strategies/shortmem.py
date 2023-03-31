@@ -1,5 +1,5 @@
-from axelrod import Player
-from axelrod.action import Action
+from axelrod_evo import Player
+from axelrod_evo.action import Action
 
 C, D = Action.C, Action.D
 

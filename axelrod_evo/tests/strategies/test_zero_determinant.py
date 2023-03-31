@@ -2,9 +2,9 @@
 
 import unittest
 
-import axelrod as axl
-from axelrod.game import DefaultGame
-from axelrod.strategies.zero_determinant import LRPlayer
+import axelrod_evo as axl
+from axelrod_evo.game import DefaultGame
+from axelrod_evo.strategies.zero_determinant import LRPlayer
 
 from .test_player import TestPlayer, test_four_vector
 

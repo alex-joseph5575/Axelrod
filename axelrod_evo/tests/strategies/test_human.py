@@ -2,8 +2,8 @@ from os import linesep
 from unittest import TestCase
 from unittest.mock import patch
 
-import axelrod as axl
-from axelrod.strategies.human import ActionValidator, Human
+import axelrod_evo as axl
+from axelrod_evo.strategies.human import ActionValidator, Human
 from prompt_toolkit.validation import ValidationError
 
 from .test_player import TestPlayer
@@ -80,7 +80,7 @@ class TestHumanClass(TestPlayer):
         self.assertIsNotNone(actual_messages["toolbar"])
 
     def test_get_human_input_c(self):
-        with patch("axelrod.human.prompt", return_value="c") as prompt_:
+        with patch("axelrod_evo.human.prompt", return_value="c") as prompt_:
             actions = [(C, C)] * 5
             self.versus_test(axl.Cooperator(), expected_actions=actions)
             self.assertEqual(
@@ -88,7 +88,7 @@ class TestHumanClass(TestPlayer):
             )
 
     def test_get_human_input_C(self):
-        with patch("axelrod.human.prompt", return_value="C") as prompt_:
+        with patch("axelrod_evo.human.prompt", return_value="C") as prompt_:
             actions = [(C, C)] * 5
             self.versus_test(axl.Cooperator(), expected_actions=actions)
             self.assertEqual(
@@ -96,7 +96,7 @@ class TestHumanClass(TestPlayer):
             )
 
     def test_get_human_input_d(self):
-        with patch("axelrod.human.prompt", return_value="d") as prompt_:
+        with patch("axelrod_evo.human.prompt", return_value="d") as prompt_:
             actions = [(D, C)] * 5
             self.versus_test(axl.Cooperator(), expected_actions=actions)
             self.assertEqual(
@@ -104,7 +104,7 @@ class TestHumanClass(TestPlayer):
             )
 
     def test_get_human_input_D(self):
-        with patch("axelrod.human.prompt", return_value="D") as prompt_:
+        with patch("axelrod_evo.human.prompt", return_value="D") as prompt_:
             actions = [(D, C)] * 5
             self.versus_test(axl.Cooperator(), expected_actions=actions)
             self.assertEqual(

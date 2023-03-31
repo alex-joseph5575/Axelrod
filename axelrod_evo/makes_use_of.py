@@ -2,7 +2,7 @@ import inspect
 import re
 from typing import Callable, Set, Text, Type, Union
 
-from axelrod.player import Player
+from axelrod_evo.player import Player
 
 
 def method_makes_use_of(method: Callable) -> Set[Text]:

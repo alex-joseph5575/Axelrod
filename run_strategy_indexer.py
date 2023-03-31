@@ -43,7 +43,7 @@ def check_module(
 if __name__ == "__main__":
 
     p = pathlib.Path(".")
-    modules = p.glob("./axelrod/strategies/*.py")
+    modules = p.glob("./axelrod_evo/strategies/*.py")
     exit_codes = []
 
     for module_path in modules:

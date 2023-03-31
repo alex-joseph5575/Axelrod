@@ -14,8 +14,8 @@ from typing import (
 )
 
 import yaml
-from axelrod.makes_use_of import makes_use_of
-from axelrod.player import Player
+from axelrod_evo.makes_use_of import makes_use_of
+from axelrod_evo.player import Player
 
 ALL_CLASSIFIERS_PATH = "data/all_classifiers.yml"
 
@@ -247,9 +247,9 @@ class _Classifiers(object):
         )
 
     @classmethod
-    def obey_axelrod(cls, s: Union[Player, Type[Player]]):
+    def obey_axelrod_evo(cls, s: Union[Player, Type[Player]]):
         """
-        A function to check if a strategy obeys Axelrod's original tournament
+        A function to check if a strategy obeys axelrod_evo's original tournament
         rules.
         """
         for c in ["inspects_source", "manipulates_source", "manipulates_state"]:

@@ -1,4 +1,4 @@
-from axelrod.random_ import BulkRandomGenerator
+from axelrod_evo.random_ import BulkRandomGenerator
 
 
 class MatchGenerator(object):
@@ -21,12 +21,12 @@ class MatchGenerator(object):
         Parameters
         ----------
         players : list
-            A list of axelrod.Player objects
+            A list of axelrod_evo.Player objects
         repetitions : int
             The number of repetitions of a given match
         turns : integer
             The number of turns per match
-        game : axelrod.Game
+        game : axelrod_evo.Game
             The game object used to score the match
         noise : float, 0
             The probability that a player's intended action should be flipped

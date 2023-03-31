@@ -1,6 +1,6 @@
 from typing import Tuple, Union
 
-from axelrod import Action
+from axelrod_evo import Action
 
 C, D = Action.C, Action.D
 
@@ -63,7 +63,7 @@ class Game(object):
         return self.scores[pair]
 
     def __repr__(self) -> str:
-        return "Axelrod game: (R,P,S,T) = {}".format(self.RPST())
+        return "axelrod_evo game: (R,P,S,T) = {}".format(self.RPST())
 
     def __eq__(self, other):
         if not isinstance(other, Game):

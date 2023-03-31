@@ -1,9 +1,9 @@
 """Tests for Hidden Markov Model Strategies."""
 import unittest
 
-import axelrod as axl
-from axelrod.evolvable_player import InsufficientParametersError
-from axelrod.strategies.hmm import (
+import axelrod_evo as axl
+from axelrod_evo.evolvable_player import InsufficientParametersError
+from axelrod_evo.strategies.hmm import (
     EvolvableHMMPlayer,
     HMMPlayer,
     SimpleHMM,

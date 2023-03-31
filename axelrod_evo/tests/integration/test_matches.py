@@ -1,8 +1,8 @@
 """Tests for some expected match behaviours"""
 import unittest
 
-import axelrod as axl
-from axelrod.tests.property import strategy_lists
+import axelrod_evo as axl
+from axelrod_evo.tests.property import strategy_lists
 from hypothesis import given, settings
 from hypothesis.strategies import integers
 
@@ -58,7 +58,7 @@ class TestMatchOutcomes(unittest.TestCase):
     def test_matches_with_det_player_for_stochastic_classes(self):
         """A test based on a bug found in the cache.
 
-        See: https://github.com/Axelrod-Python/Axelrod/issues/779"""
+        See: https://github.com/axelrod_evo-Python/axelrod_evo/issues/779"""
         p1 = axl.MemoryOnePlayer(four_vector=(0, 0, 0, 0))
         p2 = axl.MemoryOnePlayer(four_vector=(1, 0, 1, 0))
         p3 = axl.MemoryOnePlayer(four_vector=(1, 1, 1, 0))

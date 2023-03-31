@@ -1,5 +1,5 @@
-from axelrod.action import Action
-from axelrod.player import Player
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 
@@ -9,11 +9,11 @@ class Grudger(Player):
     A player starts by cooperating however will defect if at any point the
     opponent has defected.
 
-    This strategy came 7th in Axelrod's original tournament.
+    This strategy came 7th in axelrod_evo's original tournament.
 
     Names:
 
-    - Friedman's strategy: [Axelrod1980]_
+    - Friedman's strategy: [axelrod_evo1980]_
     - Grudger: [Li2011]_
     - Grim: [Berg2015]_
     - Grim Trigger: [Banks1990]_

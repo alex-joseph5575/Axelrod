@@ -3,10 +3,10 @@
 import copy
 import unittest
 
-import axelrod as axl
-from axelrod.action import str_to_actions
-from axelrod.evolvable_player import InsufficientParametersError
-from axelrod.strategies.lookerup import (
+import axelrod_evo as axl
+from axelrod_evo.action import str_to_actions
+from axelrod_evo.evolvable_player import InsufficientParametersError
+from axelrod_evo.strategies.lookerup import (
     EvolvableLookerUp,
     LookupTable,
     Plays,

@@ -289,8 +289,8 @@ class Plot(object):
 
     def save_all_plots(
         self,
-        prefix: str = "axelrod",
-        title_prefix: str = "axelrod",
+        prefix: str = "axelrod_evo",
+        title_prefix: str = "axelrod_evo",
         filetype: str = "svg",
         progress_bar: bool = True,
     ) -> None:
@@ -302,10 +302,10 @@ class Plot(object):
 
             prefix : str
                 A prefix for the file name. This can include the directory.
-                Default: axelrod.
+                Default: axelrod_evo.
             title_prefix : str
                 A prefix for the title of the plots (appears on the graphic).
-                Default: axelrod.
+                Default: axelrod_evo.
             filetype : str
                 A string for the filetype to save files to: pdf, png, svg,
                 etc...

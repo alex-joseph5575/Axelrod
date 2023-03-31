@@ -1,7 +1,7 @@
 """Tests for Calculator strategy."""
 
-import axelrod as axl
-from axelrod._strategy_utils import detect_cycle
+import axelrod_evo as axl
+from axelrod_evo._strategy_utils import detect_cycle
 
 from .test_player import TestPlayer
 
@@ -23,7 +23,7 @@ class TestCalculator(TestPlayer):
     }
 
     def test_twenty_rounds_joss_for_cyclers(self):
-        """Uses axelrod.strategies.axelrod_first.FirstByJoss strategy for first 20 rounds"""
+        """Uses axelrod_evo.strategies.axelrod_evo_first.FirstByJoss strategy for first 20 rounds"""
         seed = 4
         match = axl.Match(
             (axl.FirstByJoss(), axl.Alternator()), turns=20, seed=seed
@@ -34,7 +34,7 @@ class TestCalculator(TestPlayer):
         )
 
     def test_twenty_rounds_joss_then_defects_for_cyclers(self):
-        """Uses axelrod.strategies.axelrod_first.FirstByJoss strategy for first 20 rounds"""
+        """Uses axelrod_evo.strategies.axelrod_evo_first.FirstByJoss strategy for first 20 rounds"""
         seed = 4
         match = axl.Match(
             (axl.FirstByJoss(), axl.Alternator()), turns=20, seed=seed
@@ -49,7 +49,7 @@ class TestCalculator(TestPlayer):
         )
 
     def test_twenty_rounds_joss_for_noncyclers(self):
-        """Uses axelrod.strategies.axelrod_first.FirstByJoss strategy for first 20 rounds"""
+        """Uses axelrod_evo.strategies.axelrod_evo_first.FirstByJoss strategy for first 20 rounds"""
         seed = 4
         match = axl.Match(
             (axl.FirstByJoss(), axl.AntiCycler()), turns=20, seed=seed
@@ -60,7 +60,7 @@ class TestCalculator(TestPlayer):
         )
 
     def test_twenty_rounds_joss_then_tft_for_noncyclers(self):
-        """Uses axelrod.strategies.axelrod_first.FirstByJoss strategy for first 20 rounds"""
+        """Uses axelrod_evo.strategies.axelrod_evo_first.FirstByJoss strategy for first 20 rounds"""
         seed = 4
         match = axl.Match(
             (axl.FirstByJoss(), axl.AntiCycler()), turns=20, seed=seed
@@ -145,7 +145,7 @@ def get_joss_strategy_actions(
     """
     Takes a list of opponent moves and returns a tuple list of [(Joss moves, opponent moves)].
     "indices_to_flip" are the indices where Joss differs from it's expected TitForTat.
-    Joss is from axelrod.strategies.axelrod_first.
+    Joss is from axelrod_evo.strategies.axelrod_evo_first.
     """
     out = []
     for index, action in enumerate(opponent_moves):

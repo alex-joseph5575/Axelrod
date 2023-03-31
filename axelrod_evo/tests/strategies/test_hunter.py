@@ -1,9 +1,9 @@
 """Tests for the Hunter strategy."""
 import unittest
 
-import axelrod as axl
-from axelrod import Match
-from axelrod.strategies.hunter import detect_cycle
+import axelrod_evo as axl
+from axelrod_evo import Match
+from axelrod_evo.strategies.hunter import detect_cycle
 
 from .test_player import TestPlayer
 

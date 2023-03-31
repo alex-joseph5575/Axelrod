@@ -1,27 +1,27 @@
 """
 Revised Downing implemented from the Fortran source code for the second of
-Axelrod's tournaments.
+axelrod_evo's tournaments.
 """
-from axelrod.action import Action
-from axelrod.player import Player
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 
 
 class RevisedDowning(Player):
     """
-    Strategy submitted to Axelrod's second tournament by Leslie Downing.
+    Strategy submitted to axelrod_evo's second tournament by Leslie Downing.
     (K59R).
 
     Revised Downing attempts to determine if players are cooperative or not.
     If so, it cooperates with them.
 
     This strategy is a revision of the strategy submitted by Downing to
-    Axelrod's first tournament.
+    axelrod_evo's first tournament.
 
 
     Names:
-    - Revised Downing: [Axelrod1980]_
+    - Revised Downing: [axelrod_evo1980]_
     """
 
     name = "Revised Downing"

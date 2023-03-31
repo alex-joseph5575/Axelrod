@@ -1,11 +1,11 @@
 from math import ceil, log
 
-import axelrod.interaction_utils as iu
-from axelrod import DEFAULT_TURNS, Classifiers
-from axelrod.action import Action
-from axelrod.deterministic_cache import DeterministicCache
-from axelrod.game import Game
-from axelrod.random_ import RandomGenerator
+import axelrod_evo.interaction_utils as iu
+from axelrod_evo import DEFAULT_TURNS, Classifiers
+from axelrod_evo.action import Action
+from axelrod_evo.deterministic_cache import DeterministicCache
+from axelrod_evo.game import Game
+from axelrod_evo.random_ import RandomGenerator
 
 C, D = Action.C, Action.D
 
@@ -35,14 +35,14 @@ class Match(object):
         Parameters
         ----------
         players : tuple
-            A pair of axelrod.Player objects
+            A pair of axelrod_evo.Player objects
         turns : integer
             The number of turns per match
         prob_end : float
             The probability of a given turn ending a match
-        game : axelrod.Game
+        game : axelrod_evo.Game
             The game object used to score the match
-        deterministic_cache : axelrod.DeterministicCache
+        deterministic_cache : axelrod_evo.DeterministicCache
             A cache of resulting actions for deterministic matches
         noise : float
             The probability that a player's intended action should be flipped

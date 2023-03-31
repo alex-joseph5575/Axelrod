@@ -11,7 +11,7 @@ from collections import Counter, defaultdict
 
 import pandas as pd
 import tqdm
-from axelrod.action import Action, str_to_actions
+from axelrod_evo.action import Action, str_to_actions
 
 from .game import Game
 

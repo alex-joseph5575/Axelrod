@@ -1,9 +1,9 @@
 import numpy as np
-from axelrod.action import Action
-from axelrod.classifier import Classifiers
-from axelrod.player import Player
-from axelrod.strategies import TitForTat
-from axelrod.strategy_transformers import NiceTransformer
+from axelrod_evo.action import Action
+from axelrod_evo.classifier import Classifiers
+from axelrod_evo.player import Player
+from axelrod_evo.strategies import TitForTat
+from axelrod_evo.strategy_transformers import NiceTransformer
 
 from ._strategies import all_strategies
 from .hunter import (
@@ -18,7 +18,7 @@ from .hunter import (
 
 # Needs to be computed manually to prevent circular dependency
 ordinary_strategies = [
-    s for s in all_strategies if Classifiers.obey_axelrod(s())
+    s for s in all_strategies if Classifiers.obey_axelrod_evo(s())
 ]
 
 C, D = Action.C, Action.D
@@ -697,7 +697,7 @@ class MemoryDecay(MetaPlayer):
     altered (i.e., a C decision becomes D or vice versa; default probability
     is 0.03) or deleted (default probability is 0.1).
 
-    It is possible to pass a different axelrod player class to change the initial
+    It is possible to pass a different axelrod_evo player class to change the initial
     player behavior.
 
     Name: Memory Decay

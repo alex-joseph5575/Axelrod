@@ -2,9 +2,9 @@
 DEFAULT_TURNS = 200
 
 # The order of imports matters!
-from axelrod.version import __version__
-from axelrod.action import Action
-from axelrod.random_ import Pdf, RandomGenerator, BulkRandomGenerator
+from axelrod_evo.version import __version__
+from axelrod_evo.action import Action
+from axelrod_evo.random_ import Pdf, RandomGenerator, BulkRandomGenerator
 
 # Initialize module level Random
 # This is initially seeded by the clock / OS entropy pool
@@ -13,21 +13,21 @@ from axelrod.random_ import Pdf, RandomGenerator, BulkRandomGenerator
 # its seed.
 _module_random = RandomGenerator()
 
-from axelrod.load_data_ import load_pso_tables, load_weights
+from axelrod_evo.load_data_ import load_pso_tables, load_weights
 from axelrod import graph
-from axelrod.plot import Plot
-from axelrod.game import DefaultGame, Game
-from axelrod.history import History, LimitedHistory
-from axelrod.player import Player
-from axelrod.classifier import Classifiers
-from axelrod.evolvable_player import EvolvablePlayer
-from axelrod.mock_player import MockPlayer
-from axelrod.match import Match
-from axelrod.moran import MoranProcess, ApproximateMoranProcess
-from axelrod.strategies import *
-from axelrod.deterministic_cache import DeterministicCache
-from axelrod.match_generator import *
-from axelrod.tournament import Tournament
-from axelrod.result_set import ResultSet
-from axelrod.ecosystem import Ecosystem
-from axelrod.fingerprint import AshlockFingerprint, TransitiveFingerprint
+from axelrod_evo.plot import Plot
+from axelrod_evo.game import DefaultGame, Game
+from axelrod_evo.history import History, LimitedHistory
+from axelrod_evo.player import Player
+from axelrod_evo.classifier import Classifiers
+from axelrod_evo.evolvable_player import EvolvablePlayer
+from axelrod_evo.mock_player import MockPlayer
+from axelrod_evo.match import Match
+from axelrod_evo.moran import MoranProcess, ApproximateMoranProcess
+from axelrod_evo.strategies import *
+from axelrod_evo.deterministic_cache import DeterministicCache
+from axelrod_evo.match_generator import *
+from axelrod_evo.tournament import Tournament
+from axelrod_evo.result_set import ResultSet
+from axelrod_evo.ecosystem import Ecosystem
+from axelrod_evo.fingerprint import AshlockFingerprint, TransitiveFingerprint

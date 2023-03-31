@@ -3,9 +3,9 @@
 import itertools
 from functools import lru_cache
 
-from axelrod.action import Action
-from axelrod.strategies.cooperator import Cooperator
-from axelrod.strategies.defector import Defector
+from axelrod_evo.action import Action
+from axelrod_evo.strategies.cooperator import Cooperator
+from axelrod_evo.strategies.defector import Defector
 
 C, D = Action.C, Action.D
 

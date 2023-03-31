@@ -1,13 +1,13 @@
 from typing import Any, Dict
 
-from axelrod.action import Action
-from axelrod.evolvable_player import (
+from axelrod_evo.action import Action
+from axelrod_evo.evolvable_player import (
     EvolvablePlayer,
     InsufficientParametersError,
     copy_lists,
     crossover_lists,
 )
-from axelrod.player import Player
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 
@@ -128,7 +128,7 @@ class SimpleHMM(object):
         """Changes state and computes the response action.
 
         Parameters
-            opponent_action: Axelrod.Action
+            opponent_action: axelrod_evo.Action
                 The opponent's last action.
         """
         # Choose next state.

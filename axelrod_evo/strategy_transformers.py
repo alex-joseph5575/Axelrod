@@ -9,7 +9,7 @@ import inspect
 from importlib import import_module
 from typing import Any
 
-from axelrod.strategies.sequence_player import SequencePlayer
+from axelrod_evo.strategies.sequence_player import SequencePlayer
 
 from .action import Action
 from .makes_use_of import makes_use_of_variant
@@ -82,7 +82,7 @@ def StrategyTransformerFactory(
             """
             Parameters
             ----------
-            PlayerClass: A subclass of axelrod.Player, e.g. Cooperator
+            PlayerClass: A subclass of axelrod_evo.Player, e.g. Cooperator
                 The Player Class to modify
 
             Returns
@@ -332,7 +332,7 @@ def generic_strategy_wrapper(
     ----------
     player: Player object or subclass (self)
     opponent: Player object or subclass
-    proposed_action: an axelrod.Action, C or D
+    proposed_action: an axelrod_evo.Action, C or D
         The proposed action by the wrapped strategy
         proposed_action = Player.strategy(...)
     args, kwargs:
@@ -340,7 +340,7 @@ def generic_strategy_wrapper(
 
     Returns
     -------
-    action: an axelrod.Action, C or D
+    action: an axelrod_evo.Action, C or D
     """
 
     # This example just passes through the proposed_action
@@ -373,12 +373,12 @@ def dual_wrapper(player, opponent: Player, proposed_action: Action) -> Action:
     ----------
     player: Player object or subclass (self)
     opponent: Player object or subclass
-    proposed_action: axelrod.Action, C or D
+    proposed_action: axelrod_evo.Action, C or D
         The proposed action by the wrapped strategy
 
     Returns
     -------
-    action: an axelrod.Action, C or D
+    action: an axelrod_evo.Action, C or D
     """
 
     # dual_wrapper is a special case. The work of flip_play_attributes(player)
@@ -593,7 +593,7 @@ def mixed_wrapper(player, opponent, action, probability, m_player):
         1). Eg: 0, 1, [.5,.5], (.5,.3)
     m_players: a single player class or iterable representing set of player
         classes to mix from.
-        Eg: axelrod.TitForTat, [axelod.Cooperator, axelrod.Defector]
+        Eg: axelrod_evo.TitForTat, [axelod.Cooperator, axelrod_evo.Defector]
     """
 
     # If a single probability, player is passed
@@ -658,7 +658,7 @@ def joss_ann_wrapper(player, opponent, proposed_action, probability):
 
     player: Player object or subclass (self)
     opponent: Player object or subclass
-    proposed_action: axelrod.Action, C or D
+    proposed_action: axelrod_evo.Action, C or D
         The proposed action by the wrapped strategy
     probability: tuple
         a tuple or list representing a probability distribution of playing move
@@ -666,7 +666,7 @@ def joss_ann_wrapper(player, opponent, proposed_action, probability):
 
     Returns
     -------
-    action: an axelrod.Action, C or D
+    action: an axelrod_evo.Action, C or D
     """
     if sum(probability) > 1:
         probability = tuple([i / sum(probability) for i in probability])

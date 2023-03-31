@@ -3,17 +3,17 @@ from collections import namedtuple
 from tempfile import mkstemp
 from typing import Any, List, Union
 
-import axelrod as axl
+import axelrod_evo as axl
 import dask.dataframe as dd
 import matplotlib.pyplot as plt
 import numpy as np
 import tqdm
-from axelrod import Player
-from axelrod.interaction_utils import (
+from axelrod_evo import Player
+from axelrod_evo.interaction_utils import (
     compute_final_score_per_turn,
     read_interactions_from_file,
 )
-from axelrod.strategy_transformers import DualTransformer, JossAnnTransformer
+from axelrod_evo.strategy_transformers import DualTransformer, JossAnnTransformer
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 Point = namedtuple("Point", "x y")
@@ -69,8 +69,8 @@ def _create_jossann(point: Point, probe: Any) -> Player:
     ----------
     point : Point
     probe : class or instance
-        A class that must be descended from axelrod.Player or an instance of
-        axelrod.Player.
+        A class that must be descended from axelrod_evo.Player or an instance of
+        axelrod_evo.Player.
 
     Returns
     ----------
@@ -106,8 +106,8 @@ def _create_probes(
     Parameters
     ----------
     probe : class or instance
-        A class that must be descended from axelrod.Player or an instance of
-        axelrod.Player.
+        A class that must be descended from axelrod_evo.Player or an instance of
+        axelrod_evo.Player.
     points : list
         of Point objects with coordinates (x, y)
     progress_bar : bool
@@ -226,11 +226,11 @@ class AshlockFingerprint(object):
         Parameters
         ----------
         strategy : class or instance
-            A class that must be descended from axelrod.Player or an instance of
-            axelrod.Player.
+            A class that must be descended from axelrod_evo.Player or an instance of
+            axelrod_evo.Player.
         probe : class or instance
-            A class that must be descended from axelrod.Player or an instance of
-            axelrod.Player.
+            A class that must be descended from axelrod_evo.Player or an instance of
+            axelrod_evo.Player.
             Default: Tit For Tat
         """
         self.strategy = strategy
@@ -257,7 +257,7 @@ class AshlockFingerprint(object):
             corresponding probe (+1 to allow for including the Strategy).
 
         tournament_players : list
-            A list containing instances of axelrod.Player. The first item is the
+            A list containing instances of axelrod_evo.Player. The first item is the
             original player, the rest are the probes.
 
         """
@@ -414,8 +414,8 @@ class TransitiveFingerprint(object):
         Parameters
         ----------
         strategy : class or instance
-            A class that must be descended from axelrod.Player or an instance of
-            axelrod.Player.
+            A class that must be descended from axelrod_evo.Player or an instance of
+            axelrod_evo.Player.
         opponents : list of instances
             A list that contains a list of opponents
             Default: A spectrum of Random  players

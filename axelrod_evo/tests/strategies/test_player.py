@@ -4,9 +4,9 @@ import types
 import unittest
 import warnings
 
-import axelrod as axl
+import axelrod_evo as axl
 import numpy as np
-from axelrod.tests.property import strategy_lists
+from axelrod_evo.tests.property import strategy_lists
 from hypothesis import given, settings
 from hypothesis.strategies import integers, sampled_from
 
@@ -629,7 +629,7 @@ class TestPlayer(unittest.TestCase):
 
 class TestMatch(unittest.TestCase):
     """Test class for heads up play between two given players. Plays an
-    axelrod match between the two players."""
+    axelrod_evo match between the two players."""
 
     def versus_test(
         self,

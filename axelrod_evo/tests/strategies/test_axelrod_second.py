@@ -1,6 +1,6 @@
-"""Tests for the Second Axelrod strategies."""
+"""Tests for the Second axelrod_evo strategies."""
 
-import axelrod as axl
+import axelrod_evo as axl
 
 from .test_player import TestPlayer
 
@@ -438,7 +438,7 @@ class TestGrofman(TestPlayer):
 
         # Test to make sure logic matches Fortran (discrepancy found 8/23/2017)
         opponent = axl.AntiTitForTat()
-        # Actions come from a match run by Axelrod Fortran using Player('k86r')
+        # Actions come from a match run by axelrod_evo Fortran using Player('k86r')
         actions = [
             (C, C),
             (C, D),

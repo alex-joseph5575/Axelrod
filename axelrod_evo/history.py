@@ -1,6 +1,6 @@
 from collections import Counter
 
-from axelrod.action import Action, actions_to_str
+from axelrod_evo.action import Action, actions_to_str
 
 C, D = Action.C, Action.D
 

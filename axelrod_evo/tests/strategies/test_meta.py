@@ -1,8 +1,8 @@
 """Tests for the various Meta strategies."""
 
-import axelrod as axl
-from axelrod.classifier import Classifiers
-from axelrod.tests.property import strategy_lists
+import axelrod_evo as axl
+from axelrod_evo.classifier import Classifiers
+from axelrod_evo.tests.property import strategy_lists
 from hypothesis import given, settings
 from hypothesis.strategies import integers
 
@@ -105,7 +105,7 @@ class TestMetaPlayer(TestPlayer):
         modifies the behaviour of meta strategies which in turn requires
         modification of the tests.
 
-        In https://github.com/Axelrod-Python/Axelrod/pull/1373 specific
+        In https://github.com/axelrod_evo-Python/axelrod_evo/pull/1373 specific
         behaviour tests for the meta strategies were removed.
 
         This test ensures that a valid example is always returned by checking

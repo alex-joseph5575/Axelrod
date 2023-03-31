@@ -1,4 +1,4 @@
-from axelrod.action import Action
+from axelrod_evo.action import Action
 
 from .memoryone import MemoryOnePlayer
 

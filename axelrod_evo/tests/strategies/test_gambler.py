@@ -3,9 +3,9 @@
 import copy
 import unittest
 
-import axelrod as axl
-from axelrod.load_data_ import load_pso_tables
-from axelrod.strategies.lookerup import create_lookup_table_keys
+import axelrod_evo as axl
+from axelrod_evo.load_data_ import load_pso_tables
+from axelrod_evo.strategies.lookerup import create_lookup_table_keys
 
 from .test_evolvable_player import PartialClass, TestEvolvablePlayer
 from .test_lookerup import convert_original_to_current

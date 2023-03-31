@@ -2,8 +2,8 @@
 
 import unittest
 
-import axelrod as axl
-from axelrod.strategies import dbs
+import axelrod_evo as axl
+from axelrod_evo.strategies import dbs
 
 from .test_player import TestPlayer
 

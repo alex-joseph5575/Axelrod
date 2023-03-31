@@ -1,9 +1,9 @@
 """Tests for the Thue-Morse strategies."""
 import unittest
 
-import axelrod as axl
-from axelrod._strategy_utils import recursive_thue_morse
-from axelrod.strategies.sequence_player import SequencePlayer
+import axelrod_evo as axl
+from axelrod_evo._strategy_utils import recursive_thue_morse
+from axelrod_evo.strategies.sequence_player import SequencePlayer
 
 from .test_player import TestOpponent, TestPlayer
 

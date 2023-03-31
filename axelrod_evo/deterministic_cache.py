@@ -16,7 +16,7 @@ import pickle
 from collections import UserDict
 from typing import List, Tuple
 
-from axelrod import Classifiers
+from axelrod_evo import Classifiers
 
 from .action import Action
 from .player import Player
@@ -39,7 +39,7 @@ def _key_transform(key: CachePlayerKey) -> CacheKey:
 def _is_valid_key(key: CachePlayerKey) -> bool:
     """Validate a deterministic cache player key.
 
-    The key should always be a 2-tuple, with a pair of axelrod.Player
+    The key should always be a 2-tuple, with a pair of axelrod_evo.Player
     instances and one integer. Both players should be deterministic.
 
     Parameters
@@ -94,7 +94,7 @@ class DeterministicCache(UserDict):
     resulting interactions. e.g. for a 3 turn Match between Cooperator and
     Alternator, the dictionary entry would be:
 
-    (axelrod.Cooperator, axelrod.Alternator): [(C, C), (C, D), (C, C)]
+    (axelrod_evo.Cooperator, axelrod_evo.Alternator): [(C, C), (C, D), (C, C)]
 
     Most of the functionality is provided by the UserDict class (which uses an
     instance of dict as the 'data' attribute to hold the dictionary entries).
@@ -133,7 +133,7 @@ class DeterministicCache(UserDict):
 
         if not _is_valid_key(key):
             raise ValueError(
-                "Key must be a tuple of 2 deterministic axelrod Player classes"
+                "Key must be a tuple of 2 deterministic axelrod_evo Player classes"
             )
 
         if not _is_valid_value(value):

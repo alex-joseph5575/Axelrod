@@ -1,7 +1,7 @@
 from typing import Optional
 
 import numpy as np
-from axelrod.action import Action
+from axelrod_evo.action import Action
 from numpy.random import RandomState
 
 C, D = Action.C, Action.D
@@ -50,7 +50,7 @@ class RandomGenerator(object):
 
         Returns
         -------
-        axelrod.Action
+        axelrod_evo.Action
         """
         if p == 0:
             return D
@@ -78,7 +78,7 @@ class RandomGenerator(object):
 
         Returns
         -------
-        axelrod.Action
+        axelrod_evo.Action
         """
         if self.random_choice(threshold) == C:
             return action.flip()

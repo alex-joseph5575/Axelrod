@@ -1,6 +1,6 @@
-"""Tests for the First Axelrod strategies."""
+"""Tests for the First axelrod_evo strategies."""
 
-import axelrod as axl
+import axelrod_evo as axl
 
 from .test_player import TestPlayer, test_four_vector
 

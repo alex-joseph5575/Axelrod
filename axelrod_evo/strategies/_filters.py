@@ -1,7 +1,7 @@
 import operator
 from collections import namedtuple
 
-from axelrod import Classifiers
+from axelrod_evo import Classifiers
 
 
 def passes_operator_filter(player, classifier_key, value, operator):
@@ -27,7 +27,7 @@ def passes_operator_filter(player, classifier_key, value, operator):
 
     Parameters
     ----------
-        player : an instance of axelrod.Player
+        player : an instance of axelrod_evo.Player
         classifier_key: string
             Defining which entry from the strategy's classifier dict is to be
             tested (e.g. 'memory_depth').
@@ -73,7 +73,7 @@ def passes_in_list_filter(player, classifier_key, value):
 
     Parameters
     ----------
-        player: a descendant class of axelrod.Player
+        player: a descendant class of axelrod_evo.Player
         classifier_key: string
             Defining which entry from the strategy's classifier dict is to be
             tested (e.g. 'makes_use_of').
@@ -123,7 +123,7 @@ def passes_filterset(strategy, filterset):
 
     Parameters
     ----------
-        strategy : a descendant class of axelrod.Player
+        strategy : a descendant class of axelrod_evo.Player
         filterset : dict
             mapping filter name to criterion.
             e.g.

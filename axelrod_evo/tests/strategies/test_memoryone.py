@@ -2,8 +2,8 @@
 import unittest
 import warnings
 
-import axelrod as axl
-from axelrod.strategies.memoryone import MemoryOnePlayer
+import axelrod_evo as axl
+from axelrod_evo.strategies.memoryone import MemoryOnePlayer
 
 from .test_alternator import TestAlternator
 from .test_cooperator import TestCooperator

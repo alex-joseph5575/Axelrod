@@ -1,14 +1,14 @@
 import copy
 from typing import Any, Dict, Union
 
-from axelrod.action import Action
-from axelrod.player import Player
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 
 
 class GoByMajority(Player):
-    """Submitted to Axelrod's second tournament by Gail Grisell.  It came 23rd
+    """Submitted to axelrod_evo's second tournament by Gail Grisell.  It came 23rd
     and was written in 10 lines of BASIC.
 
     A player examines the history of the opponent: if the opponent has more
@@ -24,8 +24,8 @@ class GoByMajority(Player):
 
     Names:
 
-    - Go By Majority: [Axelrod1984]_
-    - Grisell: [Axelrod1980b]_
+    - Go By Majority: [axelrod_evo1984]_
+    - Grisell: [axelrod_evo1980b]_
     - Soft Majority: [Mittal2009]_
     """
 

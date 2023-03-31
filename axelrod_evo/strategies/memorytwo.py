@@ -4,8 +4,8 @@ import itertools
 import warnings
 from typing import Dict, Optional, Tuple
 
-from axelrod.action import Action
-from axelrod.player import Player
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
 
 from .defector import Defector
 from .titfortat import TitFor2Tats, TitForTat

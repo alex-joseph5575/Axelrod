@@ -3,8 +3,8 @@
 import unittest
 import warnings
 
-import axelrod as axl
-from axelrod.strategies.memorytwo import MemoryTwoPlayer
+import axelrod_evo as axl
+from axelrod_evo.strategies.memorytwo import MemoryTwoPlayer
 
 from .test_alternator import TestAlternator
 from .test_cooperator import TestCooperator

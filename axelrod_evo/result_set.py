@@ -9,7 +9,7 @@ import dask as da
 import dask.dataframe as dd
 import numpy as np
 import tqdm
-from axelrod.action import Action
+from axelrod_evo.action import Action
 
 from . import eigen
 
@@ -637,7 +637,7 @@ class ResultSet:
 
         Parameters
         ----------
-            other : axelrod.ResultSet
+            other : axelrod_evo.ResultSet
                 Another results set against which to check equality
         """
 
@@ -686,7 +686,7 @@ class ResultSet:
 
         Parameters
         ----------
-            other : axelrod.ResultSet
+            other : axelrod_evo.ResultSet
                 Another results set against which to check inequality
         """
         return not self.__eq__(other)

@@ -1,10 +1,10 @@
 """Tests for the ANN strategy."""
 import unittest
 
-import axelrod as axl
-from axelrod.evolvable_player import InsufficientParametersError
-from axelrod.load_data_ import load_weights
-from axelrod.strategies.ann import split_weights
+import axelrod_evo as axl
+from axelrod_evo.evolvable_player import InsufficientParametersError
+from axelrod_evo.load_data_ import load_weights
+from axelrod_evo.strategies.ann import split_weights
 
 from .test_evolvable_player import PartialClass, TestEvolvablePlayer
 from .test_player import TestPlayer

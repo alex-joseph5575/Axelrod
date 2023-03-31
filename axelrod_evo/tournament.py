@@ -7,11 +7,11 @@ from multiprocessing import Process, Queue, cpu_count
 from tempfile import mkstemp
 from typing import List, Optional, Tuple
 
-import axelrod.interaction_utils as iu
+import axelrod_evo.interaction_utils as iu
 import tqdm
-from axelrod import DEFAULT_TURNS
-from axelrod.action import Action, actions_to_str
-from axelrod.player import Player
+from axelrod_evo import DEFAULT_TURNS
+from axelrod_evo.action import Action, actions_to_str
+from axelrod_evo.player import Player
 
 from .game import Game
 from .match import Match
@@ -25,7 +25,7 @@ class Tournament(object):
     def __init__(
         self,
         players: List[Player],
-        name: str = "axelrod",
+        name: str = "axelrod_evo",
         game: Game = None,
         turns: int = None,
         prob_end: float = None,
@@ -39,10 +39,10 @@ class Tournament(object):
         Parameters
         ----------
         players : list
-            A list of axelrod.Player objects
+            A list of axelrod_evo.Player objects
         name : string
             A name for the tournament
-        game : axelrod.Game
+        game : axelrod_evo.Game
             The game object used to score the tournament
         turns : integer
             The number of turns per match
@@ -129,7 +129,7 @@ class Tournament(object):
 
         Returns
         -------
-        axelrod.ResultSet
+        axelrod_evo.ResultSet
         """
         self.num_interactions = 0
 

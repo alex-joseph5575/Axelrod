@@ -1,12 +1,12 @@
 """Tests for Finite State Machine Strategies."""
 import unittest
 
-import axelrod as axl
-from axelrod.compute_finite_state_machine_memory import (
+import axelrod_evo as axl
+from axelrod_evo.compute_finite_state_machine_memory import (
     get_memory_from_transitions,
 )
-from axelrod.evolvable_player import InsufficientParametersError
-from axelrod.strategies.finite_state_machines import (
+from axelrod_evo.evolvable_player import InsufficientParametersError
+from axelrod_evo.strategies.finite_state_machines import (
     EvolvableFSMPlayer,
     FSMPlayer,
     SimpleFSM,

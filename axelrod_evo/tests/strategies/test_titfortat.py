@@ -1,8 +1,8 @@
 """Tests for the tit for tat strategies."""
 import copy
 
-import axelrod as axl
-from axelrod.tests.property import strategy_lists
+import axelrod_evo as axl
+from axelrod_evo.tests.property import strategy_lists
 from hypothesis import given, settings
 from hypothesis.strategies import integers
 
@@ -513,7 +513,7 @@ class TestGradual(TestPlayer):
     def test_specific_set_of_results(self):
         """
         This tests specific reported results as discussed in
-        https://github.com/Axelrod-Python/Axelrod/issues/1294
+        https://github.com/axelrod_evo-Python/axelrod_evo/issues/1294
 
         The results there used a version of mistrust with a bug that corresponds
         to a memory one player that start by defecting and only cooperates if
@@ -719,7 +719,7 @@ class TestOriginalGradual(TestPlayer):
 
         This test just ensures that the strategy is as was originally defined.
 
-        See https://github.com/Axelrod-Python/Axelrod/issues/1294 for another
+        See https://github.com/axelrod_evo-Python/axelrod_evo/issues/1294 for another
         discussion of this.
         """
         players = [

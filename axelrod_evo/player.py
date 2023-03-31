@@ -6,11 +6,11 @@ import warnings
 from typing import Any, Dict
 
 import numpy as np
-from axelrod import _module_random
-from axelrod.action import Action
-from axelrod.game import DefaultGame
-from axelrod.history import History
-from axelrod.random_ import RandomGenerator
+from axelrod_evo import _module_random
+from axelrod_evo.action import Action
+from axelrod_evo.game import DefaultGame
+from axelrod_evo.history import History
+from axelrod_evo.random_ import RandomGenerator
 
 C, D = Action.C, Action.D
 
@@ -198,7 +198,7 @@ class Player(object, metaclass=PostInitCaller):
         """Set a random seed for the player's random number generator."""
         if seed is None:
             warnings.warn(
-                "Initializing player with seed from Axelrod module random number generator. "
+                "Initializing player with seed from axelrod_evo module random number generator. "
                 "Results may not be seed reproducible."
             )
             self._seed = _module_random.random_seed_int()

@@ -2,10 +2,10 @@
 import itertools
 import unittest
 
-import axelrod as axl
-from axelrod._strategy_utils import detect_cycle
-from axelrod.action import Action, str_to_actions
-from axelrod.evolvable_player import InsufficientParametersError
+import axelrod_evo as axl
+from axelrod_evo._strategy_utils import detect_cycle
+from axelrod_evo.action import Action, str_to_actions
+from axelrod_evo.evolvable_player import InsufficientParametersError
 
 from .test_evolvable_player import PartialClass, TestEvolvablePlayer
 from .test_player import TestPlayer

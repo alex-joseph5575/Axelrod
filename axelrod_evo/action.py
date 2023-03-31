@@ -2,7 +2,7 @@
 
 For convenience in other modules you can alias the actions:
 
-from axelrod import Action
+from axelrod_evo import Action
 C, D = Action.C, Action.D
 """
 

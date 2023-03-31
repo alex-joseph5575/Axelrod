@@ -6,9 +6,9 @@ For the original see:
 """
 from typing import Any
 
-from axelrod.action import Action, actions_to_str, str_to_actions
-from axelrod.load_data_ import load_pso_tables
-from axelrod.player import Player
+from axelrod_evo.action import Action, actions_to_str, str_to_actions
+from axelrod_evo.load_data_ import load_pso_tables
+from axelrod_evo.player import Player
 
 from .lookerup import (
     EvolvableLookerUp,
@@ -122,7 +122,7 @@ class PSOGamblerMem1(Gambler):
     """
     A 1x1x0 PSOGambler trained with pyswarm. This is the 'optimal' memory one
     strategy trained against the set of short run time strategies in the
-    Axelrod library.
+    axelrod_evo library.
 
     Names:
 

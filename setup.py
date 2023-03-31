@@ -25,22 +25,22 @@ with open("README.rst", "r") as f:
     long_description = f.read()
 
 # Read in the version number
-exec(open("axelrod/version.py", "r").read())
+exec(open("axelrod_evo/version.py", "r").read())
 
 setup(
-    name="Axelrod",
+    name="axelrod_evo",
     version=__version__,
     install_requires=install_requires,
     author="Vince Knight, Owen Campbell, Karol Langner, Marc Harper",
-    author_email=("axelrod-python@googlegroups.com"),
-    packages=["axelrod", "axelrod.strategies", "axelrod.data"],
-    url="http://axelrod.readthedocs.org/",
+    author_email=("axelrod_evo-python@googlegroups.com"),
+    packages=["axelrod_evo", "axelrod_evo.strategies", "axelrod_evo.data"],
+    url="http://axelrod_evo.readthedocs.org/",
     license="The MIT License (MIT)",
-    description="Reproduce the Axelrod iterated prisoners dilemma tournament",
+    description="Reproduce the axelrod_evo iterated prisoners dilemma tournament",
     long_description=long_description,
     long_description_content_type="text/x-rst",
     include_package_data=True,
-    package_data={"": ["axelrod/data/*"]},
+    package_data={"": ["axelrod_evo/data/*"]},
     classifiers=[
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",

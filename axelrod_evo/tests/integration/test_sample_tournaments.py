@@ -1,6 +1,6 @@
 import unittest
 
-import axelrod as axl
+import axelrod_evo as axl
 
 C, D = axl.Action.C, axl.Action.D
 
@@ -13,7 +13,7 @@ class TestSampleTournaments(unittest.TestCase):
     @classmethod
     def get_test_outcome(cls, outcome, turns=10):
         # Extract the name of players from the outcome tuples,
-        # and initiate the players by getting the classes from axelrod.
+        # and initiate the players by getting the classes from axelrod_evo.
         names = [out[0] for out in outcome]
         players = [getattr(axl, n)() for n in names]
 

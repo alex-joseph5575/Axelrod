@@ -1,6 +1,6 @@
-from axelrod.action import Action, actions_to_str
-from axelrod.player import Player
-from axelrod.strategy_transformers import (
+from axelrod_evo.action import Action, actions_to_str
+from axelrod_evo.player import Player
+from axelrod_evo.strategy_transformers import (
     FinalTransformer,
     TrackHistoryTransformer,
 )
@@ -14,7 +14,7 @@ class TitForTat(Player):
     opponent.
 
     This strategy was referred to as the *'simplest'* strategy submitted to
-    Axelrod's first tournament. It came first.
+    axelrod_evo's first tournament. It came first.
 
     Note that the code for this strategy is written in a fairly verbose
     way. This is done so that it can serve as an example strategy for
@@ -22,8 +22,8 @@ class TitForTat(Player):
 
     Names:
 
-    - Rapoport's strategy: [Axelrod1980]_
-    - TitForTat: [Axelrod1980]_
+    - Rapoport's strategy: [axelrod_evo1980]_
+    - TitForTat: [axelrod_evo1980]_
     """
 
     # These are various properties for the strategy
@@ -52,14 +52,14 @@ class TitFor2Tats(Player):
     """A player starts by cooperating and then defects only after two defects by
     opponent.
 
-    Submitted to Axelrod's second tournament by John Maynard Smith; it came in
+    Submitted to axelrod_evo's second tournament by John Maynard Smith; it came in
     24th in that tournament.
 
     Names:
 
-    - Tit for two Tats: [Axelrod1984]_
+    - Tit for two Tats: [axelrod_evo1984]_
     - Slow tit for two tats: Original name by Ranjini Das
-    - JMaynardSmith: [Axelrod1980b]_
+    - JMaynardSmith: [axelrod_evo1980b]_
     """
 
     name = "Tit For 2 Tats"
@@ -84,7 +84,7 @@ class TwoTitsForTat(Player):
 
     Names:
 
-    - Two Tits for Tats: [Axelrod1984]_
+    - Two Tits for Tats: [axelrod_evo1984]_
     """
 
     name = "Two Tits For Tat"
@@ -398,7 +398,7 @@ class OriginalGradual(Player):
     Note that `Gradual` appears in [CRISTAL-SMAC2018]_ however that version of
     `Gradual` does not give the results reported in [Beaufils1997]_ which is the
     paper that first introduced the strategy. For a longer discussion of this
-    see: https://github.com/Axelrod-Python/Axelrod/issues/1294. This is why this
+    see: https://github.com/axelrod_evo-Python/axelrod_evo/issues/1294. This is why this
     strategy has been renamed to `OriginalGradual`.
 
     Names:
@@ -465,7 +465,7 @@ class Gradual(Player):
     this version of
     `Gradual` does not give the results reported in [Beaufils1997]_ which is the
     paper that first introduced the strategy. For a longer discussion of this
-    see: https://github.com/Axelrod-Python/Axelrod/issues/1294.
+    see: https://github.com/axelrod_evo-Python/axelrod_evo/issues/1294.
 
     This version is based on  https://github.com/cristal-smac/ipd/blob/master/src/strategies.py#L224
 
@@ -521,7 +521,7 @@ class ContriteTitForTat(Player):
 
     Names:
 
-    - Contrite Tit For Tat: [Axelrod1995]_
+    - Contrite Tit For Tat: [axelrod_evo1995]_
     """
 
     name = "Contrite Tit For Tat"

@@ -4,17 +4,17 @@ An ecosystem runs in the context of a previous tournament, and takes the
 results as input. That means no matches are run by the ecosystem, and a
 tournament needs to happen before it is created. For example:
 
-players = [axelrod.Cooperator(), axlerod.Defector()]
-tournament = axelrod.Tournament(players=players)
+players = [axelrod_evo.Cooperator(), axlerod.Defector()]
+tournament = axelrod_evo.Tournament(players=players)
 results = tournament.play()
-ecosystem = axelrod.Ecosystem(results)
+ecosystem = axelrod_evo.Ecosystem(results)
 ecosystem.reproduce(100)
 """
 
 import random
 from typing import Callable, List
 
-from axelrod.result_set import ResultSet
+from axelrod_evo.result_set import ResultSet
 
 
 class Ecosystem(object):

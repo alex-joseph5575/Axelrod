@@ -1,7 +1,7 @@
 from collections import defaultdict, namedtuple
 from typing import DefaultDict, Dict, Iterator, List, Set, Tuple
 
-from axelrod.action import Action
+from axelrod_evo.action import Action
 
 C, D = Action.C, Action.D
 

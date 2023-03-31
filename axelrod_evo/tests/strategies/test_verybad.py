@@ -1,6 +1,6 @@
 """Tests for the VeryBad strategy."""
 
-import axelrod as axl
+import axelrod_evo as axl
 
 from .test_player import TestPlayer
 
@@ -21,13 +21,13 @@ class TestVeryBad(TestPlayer):
     }
 
     def test_strategy(self):
-        # axelrod.Defector -
+        # axelrod_evo.Defector -
         #   cooperates for the first three, defects for the rest P(C) < .5
         self.versus_test(
             axl.Defector(), expected_actions=([(C, D)] * 3 + [(D, D)] * 7)
         )
 
-        # axelrod.Cooperator -
+        # axelrod_evo.Cooperator -
         #   cooperate for all, P(C) == 1
         self.versus_test(axl.Cooperator(), expected_actions=[(C, C)])
 
