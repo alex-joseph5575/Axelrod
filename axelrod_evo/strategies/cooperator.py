@@ -9,7 +9,7 @@ class Cooperator(Player):
 
     Names:
 
-    - Cooperator: [axelrod_evo1984]_
+    - Cooperator: [Axelrod1984]_
     - ALLC: [Press2012]_
     - Always cooperate: [Mittal2009]_
     """

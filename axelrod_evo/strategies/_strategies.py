@@ -30,7 +30,7 @@ from .ann import ANN, EvolvableANN  # pylint: disable=unused-import
 from .apavlov import APavlov2006, APavlov2011
 from .appeaser import Appeaser
 from .averagecopier import AverageCopier, NiceAverageCopier
-from .axelrod_evo_first import (
+from .axelrod_first import (
     FirstByDavis,
     FirstByFeld,
     FirstByGraaskamp,
@@ -44,7 +44,7 @@ from .axelrod_evo_first import (
     FirstByTullock,
     FirstByAnonymous,
 )
-from .axelrod_evo_second import (
+from .axelrod_second import (
     SecondByAppold,
     SecondByBlack,
     SecondByBorufsen,

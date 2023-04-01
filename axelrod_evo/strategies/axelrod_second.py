@@ -1,6 +1,6 @@
 """
-Strategies from axelrod_evo's second tournament. All strategies in this module are
-prefixed by `SecondBy` to indicate that they were submitted in axelrod_evo's Second
+Strategies from Axelrod's second tournament. All strategies in this module are
+prefixed by `SecondBy` to indicate that they were submitted in Axelrod's Second
 tournament by the given author.
 """
 
@@ -17,7 +17,7 @@ C, D = Action.C, Action.D
 
 class SecondByChampion(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Danny Champion.
+    Strategy submitted to Axelrod's second tournament by Danny Champion.
 
     This player cooperates on the first 10 moves and plays Tit for Tat for the
     next 15 more moves. After 25 moves, the program cooperates unless all the
@@ -27,7 +27,7 @@ class SecondByChampion(Player):
 
     Names:
 
-    - Champion: [axelrod_evo1980b]_
+    - Champion: [Axelrod1980b]_
     """
 
     name = "Second by Champion"
@@ -62,7 +62,7 @@ class SecondByChampion(Player):
 
 class SecondByEatherley(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Graham Eatherley.
+    Strategy submitted to Axelrod's second tournament by Graham Eatherley.
 
     A player that keeps track of how many times in the game the other player
     defected. After the other player defects, it defects with a probability
@@ -71,7 +71,7 @@ class SecondByEatherley(Player):
 
     Names:
 
-    - Eatherley: [axelrod_evo1980b]_
+    - Eatherley: [Axelrod1980b]_
     """
 
     name = "Second by Eatherley"
@@ -100,18 +100,18 @@ class SecondByEatherley(Player):
 
 class SecondByTester(Player):
     """
-    Submitted to axelrod_evo's second tournament by David Gladstein.
+    Submitted to Axelrod's second tournament by David Gladstein.
 
     This strategy is a TFT variant that attempts to exploit certain strategies. It
     defects on the first move. If the opponent ever defects, TESTER 'apologies' by
     cooperating and then plays TFT for the rest of the game. Otherwise TESTER
     alternates cooperation and defection.
 
-    This strategy came 46th in axelrod_evo's second tournament.
+    This strategy came 46th in Axelrod's second tournament.
 
     Names:
 
-    - Tester: [axelrod_evo1980b]_
+    - Tester: [Axelrod1980b]_
     """
 
     name = "Second by Tester"
@@ -149,10 +149,10 @@ class SecondByTester(Player):
 
 class SecondByGladstein(Player):
     """
-    Submitted to axelrod_evo's second tournament by David Gladstein.
+    Submitted to Axelrod's second tournament by David Gladstein.
 
     This strategy is also known as Tester and is based on the reverse
-    engineering of the Fortran strategies from axelrod_evo's second tournament.
+    engineering of the Fortran strategies from Axelrod's second tournament.
 
     This strategy is a TFT variant that defects on the first round in order to
     test the opponent's response. If the opponent ever defects, the strategy
@@ -163,8 +163,8 @@ class SecondByGladstein(Player):
 
     Names:
 
-    - Gladstein: [axelrod_evo1980b]_
-    - Tester: [axelrod_evo1980b]_
+    - Gladstein: [Axelrod1980b]_
+    - Tester: [Axelrod1980b]_
     """
 
     name = "Second by Gladstein"
@@ -206,9 +206,9 @@ class SecondByGladstein(Player):
 class SecondByTranquilizer(Player):
 
     """
-    Submitted to axelrod_evo's second tournament by Craig Feathers
+    Submitted to Axelrod's second tournament by Craig Feathers
 
-    Description given in axelrod_evo's "More Effective Choice in the
+    Description given in Axelrod's "More Effective Choice in the
     Prisoner's Dilemma" paper: The rule normally cooperates but
     is ready to defect if the other player defects too often.
     Thus the rule tends to cooperate for the first dozen or two moves
@@ -220,7 +220,7 @@ class SecondByTranquilizer(Player):
     one-quarter of the time.
 
     This implementation is based on the reverse engineering of the
-    Fortran strategy K67R from axelrod_evo's second tournament.
+    Fortran strategy K67R from Axelrod's second tournament.
     Reversed engineered by: Owen Campbell, Will Guo and Mansour Hakem.
 
     The strategy starts by cooperating and has 3 states.
@@ -307,12 +307,12 @@ class SecondByTranquilizer(Player):
 
     If none of the above holds the player simply plays tit for tat.
 
-    Tranquilizer came in 27th place in axelrod_evo's second torunament.
+    Tranquilizer came in 27th place in Axelrod's second torunament.
 
 
     Names:
 
-    - Tranquilizer: [axelrod_evo1980]_
+    - Tranquilizer: [Axelrod1980]_
     """
 
     name = "Second by Tranquilizer"
@@ -435,7 +435,7 @@ class SecondByTranquilizer(Player):
 
 class SecondByGrofman(Player):
     """
-    Submitted to axelrod_evo's second tournament by Bernard Grofman.
+    Submitted to Axelrod's second tournament by Bernard Grofman.
 
     This strategy has 3 phases:
 
@@ -457,8 +457,8 @@ class SecondByGrofman(Player):
     recent round.
 
     Names:
-    - Grofman's strategy: [axelrod_evo1980b]_
-    - K86R: [axelrod_evo1980b]_
+    - Grofman's strategy: [Axelrod1980b]_
+    - K86R: [Axelrod1980b]_
     """
 
     name = "Second by Grofman"
@@ -493,7 +493,7 @@ class SecondByGrofman(Player):
 
 class SecondByKluepfel(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Charles Kluepfel
+    Strategy submitted to Axelrod's second tournament by Charles Kluepfel
     (K32R).
 
     This player keeps track of the the opponent's responses to own behavior:
@@ -522,7 +522,7 @@ class SecondByKluepfel(Player):
 
     Names:
 
-    - Kluepfel: [axelrod_evo1980b]_
+    - Kluepfel: [Axelrod1980b]_
     """
 
     name = "Second by Kluepfel"
@@ -605,7 +605,7 @@ class SecondByKluepfel(Player):
 
 class SecondByBorufsen(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Otto Borufsen
+    Strategy submitted to Axelrod's second tournament by Otto Borufsen
     (K32R), and came in third in that tournament.
 
     This player keeps track of the the opponent's responses to own behavior:
@@ -641,7 +641,7 @@ class SecondByBorufsen(Player):
 
     Names:
 
-    - Borufsen: [axelrod_evo1980b]_
+    - Borufsen: [Axelrod1980b]_
     """
 
     name = "Second by Borufsen"
@@ -761,7 +761,7 @@ class SecondByBorufsen(Player):
 
 class SecondByCave(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Rob Cave (K49R), and
+    Strategy submitted to Axelrod's second tournament by Rob Cave (K49R), and
     came in fourth in that tournament.
 
     First look for overly-defective or apparently random opponents, and defect
@@ -777,7 +777,7 @@ class SecondByCave(Player):
 
     Names:
 
-    - Cave: [axelrod_evo1980b]_
+    - Cave: [Axelrod1980b]_
     """
 
     name = "Second by Cave"
@@ -818,7 +818,7 @@ class SecondByCave(Player):
 
 class SecondByWmAdams(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by William Adams (K44R),
+    Strategy submitted to Axelrod's second tournament by William Adams (K44R),
     and came in fifth in that tournament.
 
     Count the number of opponent defections after their first move, call
@@ -828,7 +828,7 @@ class SecondByWmAdams(Player):
 
     Names:
 
-    - WmAdams: [axelrod_evo1980b]_
+    - WmAdams: [Axelrod1980b]_
     """
 
     name = "Second by WmAdams"
@@ -858,7 +858,7 @@ class SecondByWmAdams(Player):
 
 class SecondByGraaskampKatzen(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Jim Graaskamp and Ken
+    Strategy submitted to Axelrod's second tournament by Jim Graaskamp and Ken
     Katzen (K60R), and came in sixth in that tournament.
 
     Play Tit-for-Tat at first, and track own score.  At select checkpoints,
@@ -875,7 +875,7 @@ class SecondByGraaskampKatzen(Player):
 
     Names:
 
-    - GraaskampKatzen: [axelrod_evo1980b]_
+    - GraaskampKatzen: [Axelrod1980b]_
     """
 
     name = "Second by GraaskampKatzen"
@@ -931,7 +931,7 @@ class SecondByGraaskampKatzen(Player):
 
 class SecondByWeiner(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Herb Weiner (K41R),
+    Strategy submitted to Axelrod's second tournament by Herb Weiner (K41R),
     and came in seventh in that tournament.
 
     Play Tit-for-Tat with a chance for forgiveness and a defective override.
@@ -958,7 +958,7 @@ class SecondByWeiner(Player):
 
     Names:
 
-    - Weiner: [axelrod_evo1980b]_
+    - Weiner: [Axelrod1980b]_
     """
 
     name = "Second by Weiner"
@@ -1026,7 +1026,7 @@ class SecondByWeiner(Player):
 
 class SecondByHarrington(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Paul Harrington (K75R)
+    Strategy submitted to Axelrod's second tournament by Paul Harrington (K75R)
     and came in eighth in that tournament.
 
     This strategy has three modes:  Normal, Fair-weather, and Defect.  These
@@ -1114,7 +1114,7 @@ class SecondByHarrington(Player):
 
     Names:
 
-    - Harrington: [axelrod_evo1980b]_
+    - Harrington: [Axelrod1980b]_
     """
 
     name = "Second by Harrington"
@@ -1384,7 +1384,7 @@ class SecondByHarrington(Player):
 
 class SecondByTidemanAndChieruzzi(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by T. Nicolaus Tideman
+    Strategy submitted to Axelrod's second tournament by T. Nicolaus Tideman
     and Paula Chieruzzi (K84R) and came in ninth in that tournament.
 
     This strategy Cooperates if this player's score exceeds the opponent's
@@ -1407,7 +1407,7 @@ class SecondByTidemanAndChieruzzi(Player):
 
     Names:
 
-    - TidemanAndChieruzzi: [axelrod_evo1980b]_
+    - TidemanAndChieruzzi: [Axelrod1980b]_
     """
 
     name = "Second by Tideman and Chieruzzi"
@@ -1495,7 +1495,7 @@ class SecondByTidemanAndChieruzzi(Player):
 
 class SecondByGetzler(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Abraham Getzler (K35R)
+    Strategy submitted to Axelrod's second tournament by Abraham Getzler (K35R)
     and came in eleventh in that tournament.
 
     Strategy Defects with probability `flack`, where `flack` is calculated as
@@ -1503,7 +1503,7 @@ class SecondByGetzler(Player):
 
     Names:
 
-    - Getzler: [axelrod_evo1980b]_
+    - Getzler: [Axelrod1980b]_
     """
 
     name = "Second by Getzler"
@@ -1533,7 +1533,7 @@ class SecondByGetzler(Player):
 
 class SecondByLeyvraz(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Fransois Leyvraz
+    Strategy submitted to Axelrod's second tournament by Fransois Leyvraz
     (K68R) and came in twelfth in that tournament.
 
     The strategy uses the opponent's last three moves to decide on an action
@@ -1547,7 +1547,7 @@ class SecondByLeyvraz(Player):
 
     Names:
 
-    - Leyvraz: [axelrod_evo1980b]_
+    - Leyvraz: [Axelrod1980b]_
     """
 
     name = "Second by Leyvraz"
@@ -1588,7 +1588,7 @@ class SecondByLeyvraz(Player):
 
 class SecondByWhite(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Edward C White (K72R)
+    Strategy submitted to Axelrod's second tournament by Edward C White (K72R)
     and came in thirteenth in that tournament.
 
     * Cooperate in the first ten turns.
@@ -1598,7 +1598,7 @@ class SecondByWhite(Player):
 
     Names:
 
-    - White: [axelrod_evo1980b]_
+    - White: [Axelrod1980b]_
     """
 
     name = "Second by White"
@@ -1624,7 +1624,7 @@ class SecondByWhite(Player):
 
 class SecondByBlack(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Paul E Black (K83R)
+    Strategy submitted to Axelrod's second tournament by Paul E Black (K83R)
     and came in fifteenth in that tournament.
 
     The strategy Cooperates for the first five turns.  Then it calculates the
@@ -1635,7 +1635,7 @@ class SecondByBlack(Player):
 
     Names:
 
-    - Black: [axelrod_evo1980b]_
+    - Black: [Axelrod1980b]_
     """
 
     name = "Second by Black"
@@ -1668,7 +1668,7 @@ class SecondByBlack(Player):
 
 class SecondByRichardHufford(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Richard Hufford (K47R)
+    Strategy submitted to Axelrod's second tournament by Richard Hufford (K47R)
     and came in sixteenth in that tournament.
 
     The strategy tracks opponent "agreements", that is whenever the opponent's
@@ -1706,7 +1706,7 @@ class SecondByRichardHufford(Player):
 
     Names:
 
-    - RichardHufford: [axelrod_evo1980b]_
+    - RichardHufford: [Axelrod1980b]_
     """
 
     name = "Second by RichardHufford"
@@ -1784,7 +1784,7 @@ class SecondByRichardHufford(Player):
 
 class SecondByYamachi(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Brian Yamachi (K64R)
+    Strategy submitted to Axelrod's second tournament by Brian Yamachi (K64R)
     and came in seventeenth in that tournament.
 
     The strategy keeps track of play history through a variable called
@@ -1805,7 +1805,7 @@ class SecondByYamachi(Player):
 
     Names:
 
-    - Yamachi: [axelrod_evo1980b]_
+    - Yamachi: [Axelrod1980b]_
     """
 
     name = "Second by Yamachi"
@@ -1882,7 +1882,7 @@ class SecondByYamachi(Player):
 
 class SecondByColbert(FSMPlayer):
     """
-    Strategy submitted to axelrod_evo's second tournament by William Colbert (K51R)
+    Strategy submitted to Axelrod's second tournament by William Colbert (K51R)
     and came in eighteenth in that tournament.
 
     In the first eight turns, this strategy Coopearates on all but the sixth
@@ -1893,7 +1893,7 @@ class SecondByColbert(FSMPlayer):
 
     Names:
 
-    - Colbert: [axelrod_evo1980b]_
+    - Colbert: [Axelrod1980b]_
     """
 
     name = "Second by Colbert"
@@ -1939,7 +1939,7 @@ class SecondByColbert(FSMPlayer):
 
 class SecondByMikkelson(FSMPlayer):
     """
-    Strategy submitted to axelrod_evo's second tournament by Ray Mikkelson (K66R)
+    Strategy submitted to Axelrod's second tournament by Ray Mikkelson (K66R)
     and came in twentieth in that tournament.
 
     The strategy keeps track of a variable called `credit`, which determines if
@@ -1957,7 +1957,7 @@ class SecondByMikkelson(FSMPlayer):
 
     Names:
 
-    - Mikkelson: [axelrod_evo1980b]_
+    - Mikkelson: [Axelrod1980b]_
     """
 
     name = "Second by Mikkelson"
@@ -2002,7 +2002,7 @@ class SecondByMikkelson(FSMPlayer):
 
 class SecondByRowsam(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Glen Rowsam (K58R)
+    Strategy submitted to Axelrod's second tournament by Glen Rowsam (K58R)
     and came in 21st in that tournament.
 
     The strategy starts in Normal mode, where it cooperates every turn.  Every
@@ -2030,7 +2030,7 @@ class SecondByRowsam(Player):
 
     Names:
 
-    - Rowsam: [axelrod_evo1980b]_
+    - Rowsam: [Axelrod1980b]_
     """
 
     name = "Second by Rowsam"
@@ -2106,7 +2106,7 @@ class SecondByRowsam(Player):
 
 class SecondByAppold(Player):
     """
-    Strategy submitted to axelrod_evo's second tournament by Scott Appold (K88R) and
+    Strategy submitted to Axelrod's second tournament by Scott Appold (K88R) and
     came in 22nd in that tournament.
 
     Cooperates for first four turns.
@@ -2124,7 +2124,7 @@ class SecondByAppold(Player):
 
     Names:
 
-    - Appold: [axelrod_evo1980b]_
+    - Appold: [Axelrod1980b]_
     """
 
     name = "Second by Appold"
