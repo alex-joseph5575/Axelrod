@@ -1,12 +1,12 @@
 """
-Strategies submitted to Axelrod's first tournament. All strategies in this
+Strategies submitted to axelrod_evo's first tournament. All strategies in this
 module are prefixed by `FirstBy` to indicate that they were submitted in
-Axelrod's First tournament by the given author.
+axelrod_evo's First tournament by the given author.
 
 Note that these strategies are implemented from the descriptions presented
 in:
 
-Axelrod, R. (1980). Effective Choice in the Prisoner’s Dilemma.
+axelrod_evo, R. (1980). Effective Choice in the Prisoner’s Dilemma.
 Journal of Conflict Resolution, 24(1), 3–25.
 
 These descriptions are not always clear and/or precise and when assumptions have
@@ -27,18 +27,18 @@ C, D = Action.C, Action.D
 
 class FirstByDavis(Player):
     """
-    Submitted to Axelrod's first tournament by Morton Davis.
+    Submitted to axelrod_evo's first tournament by Morton Davis.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "A player starts by cooperating for 10 rounds then plays Grudger,
     > defecting if at any point the opponent has defected."
 
-    This strategy came 8th in Axelrod's original tournament.
+    This strategy came 8th in axelrod_evo's original tournament.
 
     Names:
 
-    - Davis: [Axelrod1980]_
+    - Davis: [axelrod_evo1980]_
     """
 
     name = "First by Davis"
@@ -73,9 +73,9 @@ class FirstByDavis(Player):
 
 class FirstByDowning(Player):
     """
-    Submitted to Axelrod's first tournament by Downing
+    Submitted to axelrod_evo's first tournament by Downing
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule selects its choice to maximize its own longterm expected payoff on
     > the assumption that the other rule cooperates with a fixed probability which
@@ -173,7 +173,7 @@ class FirstByDowning(Player):
     cooperate if E_C > E_D and will defect if E_C < E_D.
 
     In the case of E_C = E_D, the player will alternate from their previous
-    move. This is based on specific sentence from Axelrod's original paper:
+    move. This is based on specific sentence from axelrod_evo's original paper:
 
     > "Under certain circumstances, DOWNING will even determine that the best
     > strategy is to alternate cooperation and defection."
@@ -221,11 +221,11 @@ class FirstByDowning(Player):
     This is an assumption with no clear indication from the literature.
 
     --
-    This strategy came 10th in Axelrod's original tournament.
+    This strategy came 10th in axelrod_evo's original tournament.
 
     Names:
 
-    - Downing: [Axelrod1980]_
+    - Downing: [axelrod_evo1980]_
     """
 
     name = "First by Downing"
@@ -285,9 +285,9 @@ class FirstByDowning(Player):
 
 class FirstByFeld(Player):
     """
-    Submitted to Axelrod's first tournament by Scott Feld.
+    Submitted to axelrod_evo's first tournament by Scott Feld.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule starts with tit for tat and gradually lowers its probability of
     > cooperation following the other's cooperation to .5 by the two hundredth
@@ -299,11 +299,11 @@ class FirstByFeld(Player):
     the cooperation probability should drop. This implements a linear decreasing
     function.
 
-    This strategy came 11th in Axelrod's original tournament.
+    This strategy came 11th in axelrod_evo's original tournament.
 
     Names:
 
-    - Feld: [Axelrod1980]_
+    - Feld: [axelrod_evo1980]_
     """
 
     name = "First by Feld"
@@ -359,9 +359,9 @@ class FirstByFeld(Player):
 
 class FirstByGraaskamp(Player):
     """
-    Submitted to Axelrod's first tournament by James Graaskamp.
+    Submitted to axelrod_evo's first tournament by James Graaskamp.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule plays tit for tat for 50 moves, defects on move 51, and then
     > plays 5 more moves of tit for tat. A check is then made to see if the player
@@ -391,11 +391,11 @@ class FirstByGraaskamp(Player):
     players have played the same moves for the entire game. This is unlikely to
     be the original approach but no further details are available.
 
-    This strategy came 9th in Axelrod’s original tournament.
+    This strategy came 9th in axelrod_evo’s original tournament.
 
     Names:
 
-    - Graaskamp: [Axelrod1980]_
+    - Graaskamp: [axelrod_evo1980]_
     """
 
     name = "First by Graaskamp"
@@ -468,18 +468,18 @@ class FirstByGraaskamp(Player):
 
 class FirstByGrofman(Player):
     """
-    Submitted to Axelrod's first tournament by Bernard Grofman.
+    Submitted to axelrod_evo's first tournament by Bernard Grofman.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
      > "If the players did different things on the previous move, this rule
      > cooperates with probability 2/7. Otherwise this rule always cooperates."
 
-    This strategy came 4th in Axelrod's original tournament.
+    This strategy came 4th in axelrod_evo's original tournament.
 
     Names:
 
-    - Grofman: [Axelrod1980]_
+    - Grofman: [axelrod_evo1980]_
     """
 
     name = "First by Grofman"
@@ -501,18 +501,18 @@ class FirstByGrofman(Player):
 
 class FirstByJoss(MemoryOnePlayer):
     """
-    Submitted to Axelrod's first tournament by Johann Joss.
+    Submitted to axelrod_evo's first tournament by Johann Joss.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule cooperates 90% of the time after a cooperation by the other. It
     > always defects after a defection by the other."
 
-    This strategy came 12th in Axelrod's original tournament.
+    This strategy came 12th in axelrod_evo's original tournament.
 
     Names:
 
-    - Joss: [Axelrod1980]_
+    - Joss: [axelrod_evo1980]_
     - Hard Joss: [Stewart2012]_
     """
 
@@ -532,9 +532,9 @@ class FirstByJoss(MemoryOnePlayer):
 
 class FirstByNydegger(Player):
     """
-    Submitted to Axelrod's first tournament by Rudy Nydegger.
+    Submitted to axelrod_evo's first tournament by Rudy Nydegger.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "The program begins with tit for tat for the first three moves, except
     > that if it was the only one to cooperate on the first move and the only one
@@ -576,11 +576,11 @@ class FirstByNydegger(Player):
     stooge which had a memory and appeared to be trustworthy, potentially
     cooperative, but not gullible.
 
-    This strategy came 3rd in Axelrod's original tournament.
+    This strategy came 3rd in axelrod_evo's original tournament.
 
     Names:
 
-    - Nydegger: [Axelrod1980]_
+    - Nydegger: [axelrod_evo1980]_
     """
 
     name = "First by Nydegger"
@@ -655,9 +655,9 @@ class FirstByNydegger(Player):
 
 class FirstByShubik(Player):
     """
-    Submitted to Axelrod's first tournament by Martin Shubik.
+    Submitted to axelrod_evo's first tournament by Martin Shubik.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule cooperates until the other defects, and then defects once. If
     > the other defects again after the rule's cooperation is resumed, the rule
@@ -685,11 +685,11 @@ class FirstByShubik(Player):
     defects for k rounds. After k rounds it starts cooperating again and
     increments the value of k if the opponent defects again.
 
-    This strategy came 5th in Axelrod's original tournament.
+    This strategy came 5th in axelrod_evo's original tournament.
 
     Names:
 
-    - Shubik: [Axelrod1980]_
+    - Shubik: [axelrod_evo1980]_
     """
 
     name = "First by Shubik"
@@ -740,9 +740,9 @@ class FirstByShubik(Player):
 
 class FirstByTullock(Player):
     """
-    Submitted to Axelrod's first tournament by Gordon Tullock.
+    Submitted to axelrod_evo's first tournament by Gordon Tullock.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule cooperates on the first eleven moves. It then cooperates 10%
     > less than the other player has cooperated on the preceding ten moves. This
@@ -756,11 +756,11 @@ class FirstByTullock(Player):
     Cooperates for the first 11 rounds then randomly cooperates 10% less often
     than the opponent has in the previous 10 rounds.
 
-    This strategy came 13th in Axelrod's original tournament.
+    This strategy came 13th in axelrod_evo's original tournament.
 
     Names:
 
-    - Tullock: [Axelrod1980]_
+    - Tullock: [axelrod_evo1980]_
     """
 
     name = "First by Tullock"
@@ -790,10 +790,10 @@ class FirstByTullock(Player):
 
 class FirstByAnonymous(Player):
     """
-    Submitted to Axelrod's first tournament by a graduate student whose name was
+    Submitted to axelrod_evo's first tournament by a graduate student whose name was
     withheld.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule has a probability of cooperating, P, which is initially 30% and
     > is updated every 10 moves. P is adjusted if the other player seems random,
@@ -809,7 +809,7 @@ class FirstByAnonymous(Player):
 
     Names:
 
-    - (Name withheld): [Axelrod1980]_
+    - (Name withheld): [axelrod_evo1980]_
     """
 
     name = "First by Anonymous"
@@ -831,9 +831,9 @@ class FirstByAnonymous(Player):
 @FinalTransformer((D, D), name_prefix=None)
 class FirstBySteinAndRapoport(Player):
     """
-    Submitted to Axelrod's first tournament by William Stein and Amnon Rapoport.
+    Submitted to axelrod_evo's first tournament by William Stein and Amnon Rapoport.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule plays tit for tat except that it cooperates on the first four
     > moves, it defects on the last two moves, and every fifteen moves it checks
@@ -849,11 +849,11 @@ class FirstBySteinAndRapoport(Player):
        test <http://en.wikipedia.org/wiki/Chi-squared_test>`_ to check if the
        opponent is playing randomly. If so it defects.
 
-    This strategy came 6th in Axelrod's original tournament.
+    This strategy came 6th in axelrod_evo's original tournament.
 
     Names:
 
-    - SteinAndRapoport: [Axelrod1980]_
+    - SteinAndRapoport: [axelrod_evo1980]_
     """
 
     name = "First by Stein and Rapoport"
@@ -905,10 +905,10 @@ class FirstBySteinAndRapoport(Player):
 @FinalTransformer((D, D), name_prefix=None)
 class FirstByTidemanAndChieruzzi(Player):
     """
-    Submitted to Axelrod's first tournament by Nicolas Tideman and Paula
+    Submitted to axelrod_evo's first tournament by Nicolas Tideman and Paula
     Chieruzzi.
 
-    The description written in [Axelrod1980]_ is:
+    The description written in [axelrod_evo1980]_ is:
 
     > "This rule begins with cooperation and tit for tat. However, when the
     > other player finishes his second run of defec- tions, an extra punishment is
@@ -939,11 +939,11 @@ class FirstByTidemanAndChieruzzi(Player):
 
     3. The strategy defects on the last two moves.
 
-    This strategy came 2nd in Axelrod’s original tournament.
+    This strategy came 2nd in axelrod_evo’s original tournament.
 
     Names:
 
-    - TidemanAndChieruzzi: [Axelrod1980]_
+    - TidemanAndChieruzzi: [axelrod_evo1980]_
     """
 
     name = "First by Tideman and Chieruzzi"

@@ -2,7 +2,7 @@ from axelrod_evo._strategy_utils import detect_cycle
 from axelrod_evo.action import Action
 from axelrod_evo.player import Player
 
-from .axelrod_first import FirstByJoss as Joss
+from .axelrod_evo_first import FirstByJoss as Joss
 
 C, D = Action.C, Action.D
 

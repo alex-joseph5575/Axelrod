@@ -10,7 +10,7 @@ class Alternator(Player):
 
     Names
 
-    - Alternator: [Axelrod1984]_
+    - Alternator: [axelrod_evo1984]_
     - Periodic player CD: [Mittal2009]_
     """
 

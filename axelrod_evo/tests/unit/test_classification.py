@@ -158,7 +158,7 @@ class TestClassification(unittest.TestCase):
         player.classifier["memory_depth"] += 1
         self.assertNotEqual(player.classifier, axl.Defector.classifier)
 
-    def test_obey_axelrod(self):
+    def test_obey_axelrod_evo(self):
         """A test that verifies if the obey_axl function works correctly"""
         known_cheaters = [
             axl.Darwin,
@@ -188,17 +188,17 @@ class TestClassification(unittest.TestCase):
 
         for strategy in known_cheaters:
             self.assertFalse(
-                axl.Classifiers.obey_axelrod(strategy()), msg=strategy
+                axl.Classifiers.obey_axelrod_evo(strategy()), msg=strategy
             )
 
         for strategy in known_basic:
             self.assertTrue(
-                axl.Classifiers.obey_axelrod(strategy()), msg=strategy
+                axl.Classifiers.obey_axelrod_evo(strategy()), msg=strategy
             )
 
         for strategy in known_ordinary:
             self.assertTrue(
-                axl.Classifiers.obey_axelrod(strategy()), msg=strategy
+                axl.Classifiers.obey_axelrod_evo(strategy()), msg=strategy
             )
 
     def test_is_basic(self):

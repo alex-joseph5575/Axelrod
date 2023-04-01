@@ -9,7 +9,7 @@ class Defector(Player):
 
     Names:
 
-    - Defector: [Axelrod1984]_
+    - Defector: [axelrod_evo1984]_
     - ALLD: [Press2012]_
     - Always defect: [Mittal2009]_
     """

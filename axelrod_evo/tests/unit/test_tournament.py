@@ -119,7 +119,7 @@ class TestTournament(unittest.TestCase):
         self.assertIsInstance(tournament._logger, logging.Logger)
         self.assertEqual(tournament.noise, 0.2)
         anonymous_tournament = axl.Tournament(players=self.players)
-        self.assertEqual(anonymous_tournament.name, "axelrod")
+        self.assertEqual(anonymous_tournament.name, "axelrod_evo")
 
     def test_init_with_match_attributes(self):
         tournament = axl.Tournament(
@@ -415,7 +415,7 @@ class TestTournament(unittest.TestCase):
         )
     )
     # This example is to make sure #465 is fixed.
-    # As explained there: https://github.com/Axelrod-Python/Axelrod/issues/465,
+    # As explained there: https://github.com/axelrod_evo-Python/axelrod_evo/issues/465,
     # this example was identified by hypothesis.
     @example(
         tournament=axl.Tournament(
@@ -749,7 +749,7 @@ class TestTournament(unittest.TestCase):
         """Tests that a tournament with a given seed will return the
         same results each time. This specifically checks when running using
         multiple cores so as to confirm that
-        https://github.com/Axelrod-Python/Axelrod/issues/1277
+        https://github.com/axelrod_evo-Python/axelrod_evo/issues/1277
         is fixed.
 
         Note that the final asserts test only specific properties of the results
@@ -833,7 +833,7 @@ class TestProbEndTournament(unittest.TestCase):
         self.assertIsInstance(tournament._logger, logging.Logger)
         self.assertEqual(tournament.noise, 0.2)
         anonymous_tournament = axl.Tournament(players=self.players)
-        self.assertEqual(anonymous_tournament.name, "axelrod")
+        self.assertEqual(anonymous_tournament.name, "axelrod_evo")
 
     @given(
         tournament=prob_end_tournaments(
@@ -893,7 +893,7 @@ class TestSpatialTournament(unittest.TestCase):
         self.assertEqual(tournament.noise, 0.2)
         self.assertEqual(tournament.match_generator.noise, 0.2)
         anonymous_tournament = axl.Tournament(players=self.players)
-        self.assertEqual(anonymous_tournament.name, "axelrod")
+        self.assertEqual(anonymous_tournament.name, "axelrod_evo")
 
     @given(
         strategies=strategy_lists(

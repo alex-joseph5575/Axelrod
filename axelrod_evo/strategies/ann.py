@@ -322,7 +322,7 @@ class EvolvedANN(ANN):
     A strategy based on a pre-trained neural network with 17 features and a
     hidden layer of size 10.
 
-    Trained using the `axelrod_dojo` version: 0.0.8
+    Trained using the `axelrod_evo_dojo` version: 0.0.8
     Training data is archived at doi.org/10.5281/zenodo.1306926
 
     Names:
@@ -344,7 +344,7 @@ class EvolvedANN5(ANN):
     A strategy based on a pre-trained neural network with 17 features and a
     hidden layer of size 5.
 
-    Trained using the `axelrod_dojo` version: 0.0.8
+    Trained using the `axelrod_evo_dojo` version: 0.0.8
     Training data is archived at doi.org/10.5281/zenodo.1306931
 
     Names:
@@ -366,7 +366,7 @@ class EvolvedANNNoise05(ANN):
     A strategy based on a pre-trained neural network with a hidden layer of
     size 5, trained with noise=0.05.
 
-    Trained using the `axelrod_dojo` version: 0.0.8
+    Trained using the `axelrod_evo_dojo` version: 0.0.8
     Training data i archived at doi.org/10.5281/zenodo.1314247.
 
     Names:

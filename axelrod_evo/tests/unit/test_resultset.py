@@ -544,7 +544,7 @@ class TestResultSet(unittest.TestCase):
             self.assertAlmostEqual(rate, self.expected_eigenmoses_rating[j])
 
     def test_self_interaction_for_random_strategies(self):
-        # Based on https://github.com/Axelrod-Python/Axelrod/issues/670
+        # Based on https://github.com/axelrod_evo-Python/axelrod_evo/issues/670
         # Note that the conclusion of #670 is incorrect and only includes one of
         # the copies of the strategy.
         players = [s() for s in axl.demo_strategies]
