@@ -4,12 +4,12 @@ import unittest
 from tempfile import mkstemp
 from unittest.mock import patch
 
-import axelrod as axl
+import axelrod_evo as axl
 import matplotlib.pyplot
 import numpy as np
-from axelrod.fingerprint import AshlockFingerprint, Point, TransitiveFingerprint
-from axelrod.load_data_ import axl_filename
-from axelrod.tests.property import strategy_lists
+from axelrod_evo.fingerprint import AshlockFingerprint, Point, TransitiveFingerprint
+from axelrod_evo.load_data_ import axl_filename
+from axelrod_evo.tests.property import strategy_lists
 from hypothesis import given, settings
 
 C, D = axl.Action.C, axl.Action.D
@@ -204,7 +204,7 @@ class TestFingerprint(unittest.TestCase):
         )
         self.assertEqual(sorted(data.keys()), self.points_when_using_half_step)
 
-    @patch("axelrod.fingerprint.mkstemp", RecordedMksTemp.mkstemp)
+    @patch("axelrod_evo.fingerprint.mkstemp", RecordedMksTemp.mkstemp)
     def test_temp_file_creation(self):
 
         RecordedMksTemp.reset_record()

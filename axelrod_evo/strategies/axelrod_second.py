@@ -7,10 +7,10 @@ tournament by the given author.
 from typing import List
 
 import numpy as np
-from axelrod.action import Action
-from axelrod.interaction_utils import compute_final_score
-from axelrod.player import Player
-from axelrod.strategies.finite_state_machines import FSMPlayer
+from axelrod_evo.action import Action
+from axelrod_evo.interaction_utils import compute_final_score
+from axelrod_evo.player import Player
+from axelrod_evo.strategies.finite_state_machines import FSMPlayer
 
 C, D = Action.C, Action.D
 

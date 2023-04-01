@@ -2,8 +2,8 @@
 
 import unittest
 
-import axelrod as axl
-from axelrod.compute_finite_state_machine_memory import *
+import axelrod_evo as axl
+from axelrod_evo.compute_finite_state_machine_memory import *
 
 C, D = axl.Action.C, axl.Action.D
 

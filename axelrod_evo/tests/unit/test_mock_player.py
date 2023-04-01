@@ -1,6 +1,6 @@
 import unittest
 
-import axelrod as axl
+import axelrod_evo as axl
 
 C, D = axl.Action.C, axl.Action.D
 

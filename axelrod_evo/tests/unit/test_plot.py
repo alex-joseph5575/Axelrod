@@ -2,10 +2,10 @@ import pathlib
 import tempfile
 import unittest
 
-import axelrod as axl
+import axelrod_evo as axl
 import matplotlib
 import matplotlib.pyplot as plt
-from axelrod.load_data_ import axl_filename
+from axelrod_evo.load_data_ import axl_filename
 from numpy import mean
 
 

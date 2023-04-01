@@ -3,8 +3,8 @@ import pathlib
 import pickle
 import unittest
 
-import axelrod as axl
-from axelrod.load_data_ import axl_filename
+import axelrod_evo as axl
+from axelrod_evo.load_data_ import axl_filename
 
 C, D = axl.Action.C, axl.Action.D
 

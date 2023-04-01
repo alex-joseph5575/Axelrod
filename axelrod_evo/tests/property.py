@@ -3,7 +3,7 @@ A module for creating hypothesis based strategies for property based testing
 """
 import itertools
 
-import axelrod as axl
+import axelrod_evo as axl
 from hypothesis.strategies import (
     composite,
     floats,

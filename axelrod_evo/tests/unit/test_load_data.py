@@ -2,7 +2,7 @@ import os
 import pathlib
 import unittest
 
-from axelrod.load_data_ import axl_filename
+from axelrod_evo.load_data_ import axl_filename
 
 
 class TestLoadData(unittest.TestCase):

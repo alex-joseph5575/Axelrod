@@ -5,16 +5,16 @@ import unittest
 import warnings
 from typing import Any, Text
 
-import axelrod as axl
+import axelrod_evo as axl
 import yaml
-from axelrod.classifier import (
+from axelrod_evo.classifier import (
     Classifier,
     Classifiers,
     _Classifiers,
     memory_depth,
     rebuild_classifier_table,
 )
-from axelrod.player import Player
+from axelrod_evo.player import Player
 
 
 class TitForTatWithEmptyClassifier(Player):

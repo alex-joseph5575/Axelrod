@@ -3,11 +3,11 @@ import pathlib
 import unittest
 from collections import Counter
 
-import axelrod as axl
+import axelrod_evo as axl
 import pandas as pd
-from axelrod.load_data_ import axl_filename
-from axelrod.result_set import create_counter_dict
-from axelrod.tests.property import prob_end_tournaments, tournaments
+from axelrod_evo.load_data_ import axl_filename
+from axelrod_evo.result_set import create_counter_dict
+from axelrod_evo.tests.property import prob_end_tournaments, tournaments
 from dask.dataframe.core import DataFrame
 from hypothesis import given, settings
 from numpy import mean, nanmedian, std

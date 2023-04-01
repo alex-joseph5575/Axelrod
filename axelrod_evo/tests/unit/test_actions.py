@@ -1,7 +1,7 @@
 import unittest
 
-import axelrod as axl
-from axelrod.action import UnknownActionError, actions_to_str, str_to_actions
+import axelrod_evo as axl
+from axelrod_evo.action import UnknownActionError, actions_to_str, str_to_actions
 
 C, D = axl.Action.C, axl.Action.D
 

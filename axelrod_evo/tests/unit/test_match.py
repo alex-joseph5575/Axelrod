@@ -1,10 +1,10 @@
 import unittest
 from collections import Counter
 
-import axelrod as axl
-from axelrod.deterministic_cache import DeterministicCache
-from axelrod.random_ import RandomGenerator
-from axelrod.tests.property import games
+import axelrod_evo as axl
+from axelrod_evo.deterministic_cache import DeterministicCache
+from axelrod_evo.random_ import RandomGenerator
+from axelrod_evo.tests.property import games
 from hypothesis import example, given
 from hypothesis.strategies import floats, integers
 

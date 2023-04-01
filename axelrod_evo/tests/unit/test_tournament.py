@@ -9,17 +9,17 @@ import warnings
 from multiprocessing import Queue, cpu_count
 from unittest.mock import MagicMock, patch
 
-import axelrod as axl
+import axelrod_evo as axl
 import numpy as np
 import pandas as pd
-from axelrod.load_data_ import axl_filename
-from axelrod.tests.property import (
+from axelrod_evo.load_data_ import axl_filename
+from axelrod_evo.tests.property import (
     prob_end_tournaments,
     spatial_tournaments,
     strategy_lists,
     tournaments,
 )
-from axelrod.tournament import _close_objects
+from axelrod_evo.tournament import _close_objects
 from hypothesis import example, given, settings
 from hypothesis.strategies import floats, integers
 from tqdm import tqdm

@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from collections import Counter
 
-import axelrod as axl
+import axelrod_evo as axl
 
 C, D = axl.Action.C, axl.Action.D
 

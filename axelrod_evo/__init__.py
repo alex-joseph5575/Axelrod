@@ -14,7 +14,7 @@ from axelrod_evo.random_ import Pdf, RandomGenerator, BulkRandomGenerator
 _module_random = RandomGenerator()
 
 from axelrod_evo.load_data_ import load_pso_tables, load_weights
-from axelrod import graph
+from axelrod_evo import graph
 from axelrod_evo.plot import Plot
 from axelrod_evo.game import DefaultGame, Game
 from axelrod_evo.history import History, LimitedHistory

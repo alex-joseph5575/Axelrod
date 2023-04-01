@@ -2,13 +2,13 @@ import copy
 import itertools
 from typing import List, Tuple
 
-from axelrod.action import Action, actions_to_str, str_to_actions
-from axelrod.evolvable_player import (
+from axelrod_evo.action import Action, actions_to_str, str_to_actions
+from axelrod_evo.evolvable_player import (
     EvolvablePlayer,
     InsufficientParametersError,
     crossover_lists,
 )
-from axelrod.player import Player
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 actions = (C, D)

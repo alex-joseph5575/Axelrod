@@ -2,14 +2,14 @@
 
 import unittest
 
-import axelrod as axl
-from axelrod.makes_use_of import (
+import axelrod_evo as axl
+from axelrod_evo.makes_use_of import (
     class_makes_use_of,
     makes_use_of,
     makes_use_of_variant,
     method_makes_use_of,
 )
-from axelrod.strategy_transformers import final_sequence
+from axelrod_evo.strategy_transformers import final_sequence
 
 
 class TestMakesUseOfLengthAndGamePlayer(axl.Player):

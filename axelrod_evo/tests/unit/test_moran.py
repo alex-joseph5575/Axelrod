@@ -2,10 +2,10 @@ import itertools
 import unittest
 from collections import Counter
 
-import axelrod as axl
+import axelrod_evo as axl
 import matplotlib.pyplot as plt
-from axelrod import MoranProcess
-from axelrod.tests.property import strategy_lists
+from axelrod_evo import MoranProcess
+from axelrod_evo.tests.property import strategy_lists
 from hypothesis import example, given, settings
 from hypothesis.strategies import integers
 

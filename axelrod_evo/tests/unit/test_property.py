@@ -1,7 +1,7 @@
 import unittest
 
-import axelrod as axl
-from axelrod.tests.property import (
+import axelrod_evo as axl
+from axelrod_evo.tests.property import (
     games,
     matches,
     prob_end_spatial_tournaments,

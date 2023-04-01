@@ -1,7 +1,7 @@
 import unittest
 
-import axelrod as axl
-from axelrod.tests.property import games
+import axelrod_evo as axl
+from axelrod_evo.tests.property import games
 from hypothesis import given, settings
 from hypothesis.strategies import integers
 
@@ -74,6 +74,6 @@ class TestGame(unittest.TestCase):
     @settings(max_examples=5)
     def test_random_repr(self, game):
         """Test repr with random scores using the hypothesis library."""
-        expected_repr = "Axelrod game: (R,P,S,T) = {}".format(game.RPST())
+        expected_repr = "axelrod_evo game: (R,P,S,T) = {}".format(game.RPST())
         self.assertEqual(expected_repr, game.__repr__())
         self.assertEqual(expected_repr, str(game))

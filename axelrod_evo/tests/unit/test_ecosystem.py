@@ -2,7 +2,7 @@
 
 import unittest
 
-import axelrod as axl
+import axelrod_evo as axl
 
 
 class TestEcosystem(unittest.TestCase):

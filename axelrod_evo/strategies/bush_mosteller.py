@@ -1,5 +1,5 @@
-from axelrod.action import Action
-from axelrod.player import Player
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 
@@ -78,7 +78,7 @@ class BushMosteller(Player):
 
         Parameters
 
-        opponent : axelrod.Player
+        opponent : axelrod_evo.Player
             The current opponent
         """
         game = self.match_attributes["game"]

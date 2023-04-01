@@ -1,8 +1,8 @@
 import unittest
 from collections import Counter
 
-import axelrod as axl
-from axelrod.history import History, LimitedHistory
+import axelrod_evo as axl
+from axelrod_evo.history import History, LimitedHistory
 
 C, D = axl.Action.C, axl.Action.D
 

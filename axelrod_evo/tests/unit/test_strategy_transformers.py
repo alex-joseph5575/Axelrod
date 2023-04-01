@@ -1,9 +1,9 @@
-import axelrod as axl
-from axelrod.strategy_transformers import *
-from axelrod.tests.strategies.test_cooperator import TestCooperator
-from axelrod.tests.strategies.test_defector import TestDefector
-from axelrod.tests.strategies.test_player import TestMatch, TestPlayer
-from axelrod.tests.strategies.test_titfortat import TestTitForTat
+import axelrod_evo as axl
+from axelrod_evo.strategy_transformers import *
+from axelrod_evo.tests.strategies.test_cooperator import TestCooperator
+from axelrod_evo.tests.strategies.test_defector import TestDefector
+from axelrod_evo.tests.strategies.test_player import TestMatch, TestPlayer
+from axelrod_evo.tests.strategies.test_titfortat import TestTitForTat
 
 C, D = axl.Action.C, axl.Action.D
 
@@ -944,7 +944,7 @@ class TestFullForgivingCooperatorIsDefector(TestCooperator):
 
 
 class TestMixed0(TestDefector):
-    name = "Mutated Defector: 0, <class 'axelrod.strategies.cooperator.Cooperator'>"
+    name = "Mutated Defector: 0, <class 'axelrod_evo.strategies.cooperator.Cooperator'>"
     player = MixedTransformer(0, axl.Cooperator)(axl.Defector)
     expected_classifier = {
         "memory_depth": 0,
@@ -959,7 +959,7 @@ class TestMixed0(TestDefector):
 
 class TestMixed1(TestDefector):
     name = (
-        "Mutated Cooperator: 1, <class 'axelrod.strategies.defector.Defector'>"
+        "Mutated Cooperator: 1, <class 'axelrod_evo.strategies.defector.Defector'>"
     )
     player = MixedTransformer(1, axl.Defector)(axl.Cooperator)
     expected_classifier = {

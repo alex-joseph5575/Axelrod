@@ -124,13 +124,13 @@ def filtered_strategies(filterset, strategies=all_strategies):
                     'min_memory_depth': 2
                 }
         strategies: list
-            of subclasses of axelrod.Player
+            of subclasses of axelrod_evo.Player
 
     Returns
     -------
         list
 
-        of subclasses of axelrod.Player
+        of subclasses of axelrod_evo.Player
 
     """
     return [s for s in strategies if passes_filterset(s, filterset)]

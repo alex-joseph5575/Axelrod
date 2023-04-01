@@ -2,8 +2,8 @@
 import unittest
 from collections import Counter
 
-import axelrod as axl
-from axelrod import BulkRandomGenerator, Pdf, RandomGenerator
+import axelrod_evo as axl
+from axelrod_evo import BulkRandomGenerator, Pdf, RandomGenerator
 
 C, D = axl.Action.C, axl.Action.D
 

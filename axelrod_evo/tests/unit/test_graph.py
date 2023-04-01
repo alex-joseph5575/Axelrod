@@ -1,7 +1,7 @@
 import unittest
 from collections import defaultdict
 
-import axelrod as axl
+import axelrod_evo as axl
 
 
 class TestGraph(unittest.TestCase):

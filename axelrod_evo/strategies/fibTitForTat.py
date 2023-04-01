@@ -1,6 +1,6 @@
-from axelrod.action import Action, actions_to_str
-from axelrod.player import Player
-from axelrod.strategy_transformers import (
+from axelrod_evo.action import Action, actions_to_str
+from axelrod_evo.player import Player
+from axelrod_evo.strategy_transformers import (
     FinalTransformer,
     TrackHistoryTransformer,
 )

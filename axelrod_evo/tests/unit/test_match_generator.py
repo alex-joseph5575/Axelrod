@@ -1,7 +1,7 @@
 import unittest
 
-import axelrod as axl
-from axelrod.match_generator import graph_is_connected
+import axelrod_evo as axl
+from axelrod_evo.match_generator import graph_is_connected
 from hypothesis import example, given, settings
 from hypothesis.strategies import integers
 

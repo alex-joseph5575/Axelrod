@@ -1,8 +1,8 @@
 """Tests for the strategy utils."""
 import unittest
 
-import axelrod as axl
-from axelrod._strategy_utils import (
+import axelrod_evo as axl
+from axelrod_evo._strategy_utils import (
     detect_cycle,
     recursive_thue_morse,
     thue_morse_generator,

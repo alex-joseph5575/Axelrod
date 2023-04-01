@@ -1,14 +1,14 @@
 from typing import List, Tuple
 
 import numpy as np
-from axelrod.action import Action
-from axelrod.evolvable_player import (
+from axelrod_evo.action import Action
+from axelrod_evo.evolvable_player import (
     EvolvablePlayer,
     InsufficientParametersError,
     crossover_lists,
 )
-from axelrod.load_data_ import load_weights
-from axelrod.player import Player
+from axelrod_evo.load_data_ import load_weights
+from axelrod_evo.player import Player
 
 C, D = Action.C, Action.D
 nn_weights = load_weights()

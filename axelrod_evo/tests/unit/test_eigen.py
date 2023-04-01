@@ -3,7 +3,7 @@
 import unittest
 
 import numpy as np
-from axelrod.eigen import _normalise, principal_eigenvector
+from axelrod_evo.eigen import _normalise, principal_eigenvector
 from numpy.testing import assert_array_almost_equal
 
 

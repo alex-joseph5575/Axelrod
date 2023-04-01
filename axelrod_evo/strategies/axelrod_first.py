@@ -15,9 +15,9 @@ been made they are explained in the strategy docstrings.
 
 from typing import Dict, List, Optional, Tuple
 
-from axelrod.action import Action
-from axelrod.player import Player
-from axelrod.strategy_transformers import FinalTransformer
+from axelrod_evo.action import Action
+from axelrod_evo.player import Player
+from axelrod_evo.strategy_transformers import FinalTransformer
 from scipy.stats import chisquare
 
 from .memoryone import MemoryOnePlayer
@@ -193,7 +193,7 @@ class FirstByDowning(Player):
     And from the defining properties of the Prisoner's Dilemma (T > R > P > S)
     this gives: E_D > E_C.
     Thus, the player opens with a defection in the first two rounds. Note that
-    from the Axelrod publications alone there is nothing to indicate defections
+    from the axelrod_evo publications alone there is nothing to indicate defections
     on the first two rounds, although a defection in the opening round is clear.
     However there is a presentation available at
     http://www.sci.brooklyn.cuny.edu/~sklar/teaching/f05/alife/notes/azhar-ipd-Oct19th.pdf
